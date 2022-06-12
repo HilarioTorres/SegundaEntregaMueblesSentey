@@ -32,11 +32,16 @@
         list-style: none;
     }
 
-    header nav ul li a,
-    h2 {
+    header nav ul li a {
         font-family: 'Nunito', sans-serif;
         color: black;
+        font-size: 30px;
+    }
+
+    h2 {
         font-size: 20px;
+        font-family: 'Nunito', sans-serif;
+        color: black;
     }
 
     ul {
@@ -263,4 +268,78 @@
     .gridsComedorDieciseis {
         grid-area: GridsComedorDieciseis;
     }
+
+.gridsLiving{
+    height: auto;
+    width: 80em;
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.6em;
+    grid-template-areas: 
+"gridLivingLetritas gridLivingLetritas gridLivingLetritas"
+"gridLivingUno gridLivingDos gridLivingTres"
+"gridLivingCuatro gridLivingCinco gridLivingSeis"
+"gridLivingSiete gridLivingOcho gridLivingNueve"
+"gridLivingDiez gridLivingOnce gridLivingDoce"
+"gridLivingTrece gridLivingCatorce gridLivingQuince";
+}
+
+.gridsLivingLetritas{
+    grid-area: gridLivingLetritas;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.gridsLivingUno{
+    grid-area: gridLivingUno;
+}
+
+.gridsLivingDos{
+    grid-area: gridLivingDos;
+}
+
+.gridsLivingTres{
+    grid-area: gridLivingTres;
+}
+.gridsLivingCuatro{
+    grid-area: gridLivingCuatro;
+}
+.gridsLivingCinco{
+    grid-area: gridLivingCinco;
+}
+.gridsLivingSeis{
+    grid-area: gridLivingSeis;
+}
+.gridsLivingSiete{
+    grid-area: gridLivingSiete;
+}
+.gridsLivingOcho{
+    grid-area: gridLivingOcho;
+}
+.gridsLivingNueve{
+    grid-area: gridLivingNueve;
+}
+.gridsLivingDiez{
+    grid-area: gridLivingDiez;
+}
+.gridsLivingOnce{
+    grid-area: gridLivingOnce;
+}
+.gridsLivingDoce{
+    grid-area: gridLivingDoce;
+}
+.gridsLivingTrece{
+    grid-area: gridLivingTrece;
+}
+.gridsLivingCatorce{
+    grid-area: gridLivingCatorce;
+}
+.gridsLivingQuince{
+    grid-area: gridLivingQuince;
+}
 }
