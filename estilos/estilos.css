@@ -122,6 +122,7 @@ ul {
     font-family: 'Nunito', sans-serif;
     color: black;
     font-size: 20px;
+    text-align: center;
 }
 
 .gridMapa {
@@ -425,7 +426,7 @@ footer {
 
     .nombreOfertasGrid {
         margin-bottom: 0.6em;
-        margin-left: 40vh;
+        text-align: center;
     }
 
     .gridMejoresOfertas {
@@ -439,12 +440,12 @@ footer {
 
     .gridMetodoPago {
         height: 20.875em;
-        width:90em;
+        width: 90em;
     }
 
     .paddingMetodoPago {
         padding-top: 0.6em;
-        margin-left: 40%;
+        text-align: center;
     }
 
     .gridPagoImagen {
@@ -508,7 +509,7 @@ footer {
 
     header {
         height: 8em;
-        width: 100vh;
+        width: 70em;
     }
 
     ul {
@@ -519,8 +520,8 @@ footer {
     .tamañoDeimagenNuestoLocal {
         height: 30em;
         width: auto;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 10%;
+        margin-right: 15%;
         margin-top: 1.25em;
     }
 
@@ -532,7 +533,7 @@ footer {
 
     .nombreOfertasGrid {
         margin-bottom: 0.6em;
-        margin-left: 40%;
+        text-align: center;
         font-size: 40px;
     }
 
@@ -547,16 +548,17 @@ footer {
 
     .gridMetodoPago {
         height: 20.875em;
-        width: 100vh;
+        width: 100%;
     }
 
     .paddingMetodoPago {
         padding-top: 0.6em;
-        margin-left: 55%;
+        text-align: center;
+        padding-left: 12em;
     }
 
     .gridPagoImagen {
-        margin-left: 20%;
+        margin-left: 25%;
     }
 
     .gridoMapa {
@@ -644,7 +646,7 @@ footer {
     }
 
 
-    
+
     .gridMejoresOfertas {
         margin: 0px;
         gap: 10px;
@@ -659,15 +661,17 @@ footer {
 
     .gridMetodoPago {
         height: 20.875em;
-        width:100%;
+        width: 100%;
         align-items: end;
         justify-content: center;
     }
 
     .paddingMetodoPago {
         padding-top: 0.6em;
-        margin-left: 40%;
-    } 
+        margin-left: 0%;
+        margin-right: 35%;
+        text-align: center;
+    }
 
     .gridPagoImagen {
         margin-left: 0%;
@@ -675,7 +679,7 @@ footer {
 
     .gridoMapa {
         height: 30.5em;
-        width:100%;
+        width: 100%;
         align-items: end;
         justify-content: center;
         margin: 0%;
@@ -684,6 +688,10 @@ footer {
     .gridsComedor {
         height: auto;
         width: 100%;
+    }
+
+    .gridsComedor figure {
+        border: black solid 1px;
     }
 
     .gridsComedorLetritas {
@@ -696,6 +704,10 @@ footer {
         width: 100%;
     }
 
+    .gridsLiving figure {
+        border: black solid 1px;
+    }
+
     .gridsLivingLetritas {
         margin-bottom: 1em;
         margin-top: 1em;
@@ -705,6 +717,10 @@ footer {
     .gridsCocina {
         height: auto;
         width: 100%;
+    }
+
+    .gridsCocina figure {
+        border: black solid 1px;
     }
 
     .gridsCocinaLetritas {
