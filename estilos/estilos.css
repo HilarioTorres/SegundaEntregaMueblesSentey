@@ -6,7 +6,394 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+
+header nav ul li a {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+
+h2 {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tamañoLogoHeader {
+    height: 4em;
+    width: auto;
+}
+
+
+
+
+.gridMejoresOfertas {
+    display: grid;
+    grid-template-areas:
+        "tituloLocal tituloLocal"
+        "ImagenUnoLocal ImagenDosLocal"
+        "ImagenTresLocal ImagenCuatroLocal";
+    gap: 0.625em;
+    margin-bottom: 0.6em;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.nombreOfertasGrid {
+    grid-area: tituloLocal;
+}
+
+.nombreOfertasGridDos {
+    grid-area: ImagenUnoLocal;
+}
+
+.nombreOfertasGridTres {
+    grid-area: ImagenDosLocal;
+}
+
+.nombreOfertasGridCuatro {
+    grid-area: ImagenTresLocal;
+}
+
+.nombreOfertasGridCinco {
+    grid-area: ImagenCuatroLocal;
+}
+
+.gridMetodoPago {
+    display: grid;
+    grid-template-areas:
+        "pagoUno pagoUno"
+        "pagoDos pagoDos";
+}
+
+.paddingMetodoPago {
+    grid-area: pagoUno;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.gridPagoImagen {
+    grid-area: pagoDos;
+}
+
+.gridoMapa {
+    display: grid;
+    grid-template-areas:
+        "mapaUno mapaUno"
+        "mapaDos mapaTres";
+    gap: 0.25em;
+}
+
+.nuestroLocalGrid {
+    grid-area: mapaUno;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.gridMapa {
+    grid-area: mapaDos;
+}
+
+.gridImagenMapa {
+    grid-area: mapaTres;
+}
+
+.tamañoImagenMapa {
+    height: 21.875em;
+    width: 31.25em;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.gridsComedor {
+    display: grid;
+    grid-template-areas:
+        "GridsComedorUno GridsComedorUno GridsComedorUno"
+        "GridsComedorDos GridsComedorTres GridsComedorCuatro"
+        "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
+        "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
+        "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
+        "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.6em;
+}
+
+.gridsComedorLetritas {
+    grid-area: GridsComedorUno;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+.gridsComedorDos {
+    grid-area: GridsComedorDos;
+}
+
+.gridsComedorTres {
+    grid-area: GridsComedorTres;
+}
+
+.gridsComedorCuatro {
+    grid-area: GridsComedorCuatro;
+}
+
+.gridsComedorCinco {
+    grid-area: GridsComedorCinco;
+}
+
+.gridsComedorSeis {
+    grid-area: GridsComedorSeis;
+}
+
+.gridsComedorSiete {
+    grid-area: GridsComedorSiete;
+}
+
+.gridsComedorOcho {
+    grid-area: GridsComedorOcho;
+}
+
+.gridsComedorNueve {
+    grid-area: GridsComedorNueve;
+}
+
+.gridsComedorDiez {
+    grid-area: GridsComedorDiez;
+}
+
+.gridsComedorOnce {
+    grid-area: GridsComedorOnce;
+}
+
+.gridsComedorDoce {
+    grid-area: GridsComedorDoce;
+}
+
+.gridsComedorTrece {
+    grid-area: GridsComedorTrece;
+}
+
+.gridsComedorCatorce {
+    grid-area: GridsComedorCatorce;
+}
+
+.gridsComedorQuince {
+    grid-area: GridsComedorQuince;
+}
+
+.gridsComedorDieciseis {
+    grid-area: GridsComedorDieciseis;
+}
+
+.gridsLiving {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.6em;
+    grid-template-areas:
+        "gridLivingLetritas gridLivingLetritas gridLivingLetritas"
+        "gridLivingUno gridLivingDos gridLivingTres"
+        "gridLivingCuatro gridLivingCinco gridLivingSeis"
+        "gridLivingSiete gridLivingOcho gridLivingNueve"
+        "gridLivingDiez gridLivingOnce gridLivingDoce"
+        "gridLivingTrece gridLivingCatorce gridLivingQuince";
+}
+
+.gridsLivingLetritas {
+    grid-area: gridLivingLetritas;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+.gridsLivingUno {
+    grid-area: gridLivingUno;
+}
+
+.gridsLivingDos {
+    grid-area: gridLivingDos;
+}
+
+.gridsLivingTres {
+    grid-area: gridLivingTres;
+}
+
+.gridsLivingCuatro {
+    grid-area: gridLivingCuatro;
+}
+
+.gridsLivingCinco {
+    grid-area: gridLivingCinco;
+}
+
+.gridsLivingSeis {
+    grid-area: gridLivingSeis;
+}
+
+.gridsLivingSiete {
+    grid-area: gridLivingSiete;
+}
+
+.gridsLivingOcho {
+    grid-area: gridLivingOcho;
+}
+
+.gridsLivingNueve {
+    grid-area: gridLivingNueve;
+}
+
+.gridsLivingDiez {
+    grid-area: gridLivingDiez;
+}
+
+.gridsLivingOnce {
+    grid-area: gridLivingOnce;
+}
+
+.gridsLivingDoce {
+    grid-area: gridLivingDoce;
+}
+
+.gridsLivingTrece {
+    grid-area: gridLivingTrece;
+}
+
+.gridsLivingCatorce {
+    grid-area: gridLivingCatorce;
+}
+
+.gridsLivingQuince {
+    grid-area: gridLivingQuince;
+}
+
+.gridsCocina {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.6em;
+    grid-template-areas:
+        "gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
+        "gridsCocinaUno gridsCocinaDos gridsCocinaTres"
+        "gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
+        "gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
+        "gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
+        "gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
+}
+
+.gridsCocinaLetritas {
+    grid-area: gridsCocinaLetritas;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+.gridsCocinaUno {
+    grid-area: gridsCocinaUno;
+}
+
+.gridsCocinaDos {
+    grid-area: gridsCocinaDos;
+}
+
+.gridsCocinaTres {
+    grid-area: gridsCocinaTres;
+}
+
+.gridsCocinaCuatro {
+    grid-area: gridsCocinaCuatro;
+}
+
+.gridsCocinaCinco {
+    grid-area: gridsCocinaCinco;
+}
+
+.gridsCocinaSeis {
+    grid-area: gridsCocinaSeis;
+}
+
+.gridsCocinaSiete {
+    grid-area: gridsCocinaSiete;
+}
+
+.gridsCocinaOcho {
+    grid-area: gridsCocinaOcho;
+}
+
+.gridsCocinaNueve {
+    grid-area: gridsCocinaNueve;
+}
+
+.gridsCocinaDiez {
+    grid-area: gridsCocinaDiez;
+}
+
+.gridsCocinaOnce {
+    grid-area: gridsCocinaOnce;
+}
+
+.gridsCocinaDoce {
+    grid-area: gridsCocinaDoce;
+}
+
+.gridsCocinaTrece {
+    grid-area: gridsCocinaTrece;
+}
+
+.gridsCocinaCatorce {
+    grid-area: gridsCocinaCatorce;
+}
+
+.gridsCocinaQuince {
+    grid-area: gridsCocinaQuince;
+}
+
+/* A PARTIR DE ACA DESPUES BORRAR ALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALAL */
+
+@media screen and (max-width: 767px) {
 
     body {
         background-image: linear-gradient(to bottom, #b6dee3, #aed9e3, #a7d3e3, #a2cde3, #9fc6e3, #9abede, #95b6d8, #90aed2, #86a3c7, #7c98bc, #728eb1, #6883a6);
@@ -14,56 +401,19 @@
 
     header {
         height: 8em;
-        width: 80.72em;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        position: sticky;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    header nav ul li a {
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 20px;
-        font-family: 'Nunito', sans-serif;
-        color: black;
+        width: 75em;
     }
 
     ul {
         width: 30em;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 5em;
     }
 
-    .tamañoLogoHeader {
-        height: 4em;
-        width: auto;
-    }
 
     .tamañoDeimagenNuestoLocal {
         height: 30em;
         width: auto;
-        margin-left: 10em;
-        margin-right: 10em;
+        margin-left: 25%;
+        margin-right: 25%;
         margin-top: 1.25em;
     }
 
@@ -73,40 +423,121 @@
     }
 
 
-    .gridMejoresOfertas {
-        display: grid;
-        grid-template-areas:
-            "tituloLocal tituloLocal"
-            "ImagenUnoLocal ImagenDosLocal"
-            "ImagenTresLocal ImagenCuatroLocal";
-        gap: 0.625em;
+    .nombreOfertasGrid {
         margin-bottom: 0.6em;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
+        margin-left: 40vh;
     }
+
+    .gridMejoresOfertas {
+        margin-left: 30%;
+    }
+
+    .gridMejoresOfertas a img {
+        height: 20em;
+        width: auto;
+    }
+
+    .gridMetodoPago {
+        height: 20.875em;
+        width:90em;
+    }
+
+    .paddingMetodoPago {
+        padding-top: 0.6em;
+        margin-left: 40%;
+    }
+
+    .gridPagoImagen {
+        margin-left: 20%;
+    }
+
+    .gridoMapa {
+        width: 100vh;
+        height: 30.5em;
+        margin-left: 25vh;
+    }
+
+    footer {
+        height: 3.75em;
+        width: 80.75em;
+    }
+
+    .gridsComedor {
+        height: auto;
+        width: 80em;
+    }
+
+    .gridsComedorLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .gridsLiving {
+        height: auto;
+        width: 80em;
+    }
+
+    .gridsLivingLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+
+    .gridsCocina {
+        height: auto;
+        width: 80em;
+    }
+
+    .gridsCocinaLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    body {
+        background-color: lightyellow;
+    }
+
+    header {
+        height: 8em;
+        width: 100vh;
+    }
+
+    ul {
+        width: 30em;
+    }
+
+
+    .tamañoDeimagenNuestoLocal {
+        height: 30em;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1.25em;
+    }
+
+    .centrarImagenLocal {
+        width: 100vh;
+        height: 34.375em;
+    }
+
 
     .nombreOfertasGrid {
-        grid-area: tituloLocal;
         margin-bottom: 0.6em;
-        margin-left: 27em;
+        margin-left: 40%;
+        font-size: 40px;
     }
 
-    .nombreOfertasGridDos {
-        grid-area: ImagenUnoLocal;
-        margin-left: 9.25em;
-    }
-
-    .nombreOfertasGridTres {
-        grid-area: ImagenDosLocal;
-    }
-
-    .nombreOfertasGridCuatro {
-        grid-area: ImagenTresLocal;
-        margin-left: 9.25em;
-    }
-
-    .nombreOfertasGridCinco {
-        grid-area: ImagenCuatroLocal;
+    .gridMejoresOfertas {
+        margin-left: 10%
     }
 
     .gridMejoresOfertas a img {
@@ -117,1171 +548,175 @@
     .gridMetodoPago {
         height: 20.875em;
         width: 100vh;
-        display: grid;
-        grid-template-areas:
-            "pagoUno pagoUno"
-            "pagoDos pagoDos";
-
     }
 
     .paddingMetodoPago {
-        grid-area: pagoUno;
-        margin-left: 28em;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 20px;
+        padding-top: 0.6em;
+        margin-left: 55%;
     }
 
     .gridPagoImagen {
-        grid-area: pagoDos;
-        margin-left: 16em;
+        margin-left: 20%;
     }
 
     .gridoMapa {
         width: 100vh;
-        height: 37.5em;
-        display: grid;
-        grid-template-areas:
-            "mapaUno mapaUno"
-            "mapaDos mapaTres";
-        gap: 0.25em;
-        margin-left: 8em;
-    }
-
-    .nuestroLocalGrid {
-        grid-area: mapaUno;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 20px;
-    }
-
-    .gridMapa {
-        grid-area: mapaDos;
-    }
-
-    .gridImagenMapa {
-        grid-area: mapaTres;
-    }
-
-    .tamañoImagenMapa {
-        height: 21.875em;
-        width: 31.25em;
+        height: 30.5em;
+        margin-left: 5%;
     }
 
     footer {
         height: 3.75em;
         width: 80.75em;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
     }
 
     .gridsComedor {
         height: auto;
         width: 80em;
-        display: grid;
-        grid-template-areas:
-            "GridsComedorUno GridsComedorUno GridsComedorUno"
-            "GridsComedorDos GridsComedorTres GridsComedorCuatro"
-            "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
-            "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
-            "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
-            "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
-        justify-content: center;
-        align-items: stretch;
-        justify-items: center;
-        gap: 0.6em;
     }
 
     .gridsComedorLetritas {
-        grid-area: GridsComedorUno;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 30px;
         margin-bottom: 1em;
         margin-top: 1em;
     }
 
-    .gridsComedorDos {
-        grid-area: GridsComedorDos;
+    .gridsLiving {
+        height: auto;
+        width: 80em;
     }
 
-    .gridsComedorTres {
-        grid-area: GridsComedorTres;
+    .gridsLivingLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
 
-    .gridsComedorCuatro {
-        grid-area: GridsComedorCuatro;
+
+    .gridsCocina {
+        height: auto;
+        width: 80em;
     }
 
-    .gridsComedorCinco {
-        grid-area: GridsComedorCinco;
+    .gridsCocinaLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
 
-    .gridsComedorSeis {
-        grid-area: GridsComedorSeis;
-    }
-
-    .gridsComedorSiete {
-        grid-area: GridsComedorSiete;
-    }
-
-    .gridsComedorOcho {
-        grid-area: GridsComedorOcho;
-    }
-
-    .gridsComedorNueve {
-        grid-area: GridsComedorNueve;
-    }
-
-    .gridsComedorDiez {
-        grid-area: GridsComedorDiez;
-    }
-
-    .gridsComedorOnce {
-        grid-area: GridsComedorOnce;
-    }
-
-    .gridsComedorDoce {
-        grid-area: GridsComedorDoce;
-    }
-
-    .gridsComedorTrece {
-        grid-area: GridsComedorTrece;
-    }
-
-    .gridsComedorCatorce {
-        grid-area: GridsComedorCatorce;
-    }
-
-    .gridsComedorQuince {
-        grid-area: GridsComedorQuince;
-    }
-
-    .gridsComedorDieciseis {
-        grid-area: GridsComedorDieciseis;
-    }
-
-.gridsLiving{
-    height: auto;
-    width: 80em;
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-    grid-template-areas: 
-"gridLivingLetritas gridLivingLetritas gridLivingLetritas"
-"gridLivingUno gridLivingDos gridLivingTres"
-"gridLivingCuatro gridLivingCinco gridLivingSeis"
-"gridLivingSiete gridLivingOcho gridLivingNueve"
-"gridLivingDiez gridLivingOnce gridLivingDoce"
-"gridLivingTrece gridLivingCatorce gridLivingQuince";
-}
-
-.gridsLivingLetritas{
-    grid-area: gridLivingLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-.gridsLivingUno{
-    grid-area: gridLivingUno;
-}
-
-.gridsLivingDos{
-    grid-area: gridLivingDos;
-}
-
-.gridsLivingTres{
-    grid-area: gridLivingTres;
-}
-.gridsLivingCuatro{
-    grid-area: gridLivingCuatro;
-}
-.gridsLivingCinco{
-    grid-area: gridLivingCinco;
-}
-.gridsLivingSeis{
-    grid-area: gridLivingSeis;
-}
-.gridsLivingSiete{
-    grid-area: gridLivingSiete;
-}
-.gridsLivingOcho{
-    grid-area: gridLivingOcho;
-}
-.gridsLivingNueve{
-    grid-area: gridLivingNueve;
-}
-.gridsLivingDiez{
-    grid-area: gridLivingDiez;
-}
-.gridsLivingOnce{
-    grid-area: gridLivingOnce;
-}
-.gridsLivingDoce{
-    grid-area: gridLivingDoce;
-}
-.gridsLivingTrece{
-    grid-area: gridLivingTrece;
-}
-.gridsLivingCatorce{
-    grid-area: gridLivingCatorce;
-}
-.gridsLivingQuince{
-    grid-area: gridLivingQuince;
-}
-
-.gridsCocina{
-    height: auto;
-    width: 80em;
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-grid-template-areas: 
-"gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
-"gridsCocinaUno gridsCocinaDos gridsCocinaTres"
-"gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
-"gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
-"gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
-"gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
-}
-
-.gridsCocinaLetritas{
-    grid-area: gridsCocinaLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-.gridsCocinaUno{
-    grid-area: gridsCocinaUno;
-}
-.gridsCocinaDos{
-    grid-area: gridsCocinaDos;
-}
-.gridsCocinaTres{
-    grid-area: gridsCocinaTres;
-}
-
-.gridsCocinaCuatro{
-    grid-area: gridsCocinaCuatro;
-}
-
-.gridsCocinaCinco{
-    grid-area: gridsCocinaCinco;
-}
-
-.gridsCocinaSeis{
-    grid-area: gridsCocinaSeis;
-}
-
-.gridsCocinaSiete{
-    grid-area: gridsCocinaSiete;
-}
-
-.gridsCocinaOcho{
-    grid-area: gridsCocinaOcho;
-}
-
-.gridsCocinaNueve{
-    grid-area: gridsCocinaNueve;
-}
-
-.gridsCocinaDiez{
-    grid-area: gridsCocinaDiez;
-}
-
-.gridsCocinaOnce{
-    grid-area: gridsCocinaOnce;
-}
-
-.gridsCocinaDoce{
-    grid-area: gridsCocinaDoce;
-}
-
-.gridsCocinaTrece{
-    grid-area: gridsCocinaTrece;
-}
-
-.gridsCocinaCatorce{
-    grid-area: gridsCocinaCatorce;
-}
-
-.gridsCocinaQuince{
-    grid-area: gridsCocinaQuince;
-}
-
-
 }
 
 
 
 
-
-@media (max-width: 1023px){
-
+@media screen and (min-width: 1024px) {
 
     body {
-        background-image: linear-gradient(to bottom, #b6dee3, #aed9e3, #a7d3e3, #a2cde3, #9fc6e3, #9abede, #95b6d8, #90aed2, #86a3c7, #7c98bc, #728eb1, #6883a6);
+        background-image: linear-gradient(to bottom, #b6dee3, #b3e7e3, #b6efde, #c0f6d4, #d3fbc8, #d7f7bd, #dcf3b2, #e2efa7, #d3e39b, #c4d78f, #b6cc83, #a7c077);
     }
 
     header {
         height: 8em;
-        width: 80.72em;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
+        width: 100%;
         position: sticky;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    header nav ul li a {
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 20px;
-        font-family: 'Nunito', sans-serif;
-        color: black;
+        top: 0px;
+        background-color: #b6dee3;
+        border: solid 2px black;
     }
 
     ul {
         width: 30em;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
         margin-right: 5em;
     }
 
-    .tamañoLogoHeader {
-        height: 4em;
-        width: auto;
-    }
-
     .tamañoDeimagenNuestoLocal {
-        height: 30em;
-        width: auto;
-        margin-left: 10em;
-        margin-right: 10em;
+        height: 25em;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
         margin-top: 1.25em;
     }
 
     .centrarImagenLocal {
-        width: 100vh;
-        height: 34.375em;
-    }
-
-
-    .gridMejoresOfertas {
-        display: grid;
-        grid-template-areas:
-            "tituloLocal tituloLocal"
-            "ImagenUnoLocal ImagenDosLocal"
-            "ImagenTresLocal ImagenCuatroLocal";
-        gap: 0.625em;
-        margin-bottom: 0.6em;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
+        width: 100%;
+        height: 36em;
     }
 
     .nombreOfertasGrid {
-        grid-area: tituloLocal;
-        margin-bottom: 0.6em;
-        margin-left: 27em;
+        font-size: 40px;
     }
 
-    .nombreOfertasGridDos {
-        grid-area: ImagenUnoLocal;
-        margin-left: 9.25em;
-    }
 
-    .nombreOfertasGridTres {
-        grid-area: ImagenDosLocal;
-    }
-
-    .nombreOfertasGridCuatro {
-        grid-area: ImagenTresLocal;
-        margin-left: 9.25em;
-    }
-
-    .nombreOfertasGridCinco {
-        grid-area: ImagenCuatroLocal;
+    
+    .gridMejoresOfertas {
+        margin: 0px;
+        gap: 10px;
+        align-items: end;
+        justify-content: center;
     }
 
     .gridMejoresOfertas a img {
-        height: 20em;
+        height: 35em;
         width: auto;
     }
 
     .gridMetodoPago {
         height: 20.875em;
-        width: 100vh;
-        display: grid;
-        grid-template-areas:
-            "pagoUno pagoUno"
-            "pagoDos pagoDos";
-
+        width:100%;
+        align-items: end;
+        justify-content: center;
     }
 
     .paddingMetodoPago {
-        grid-area: pagoUno;
-        margin-left: 28em;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 20px;
-    }
+        padding-top: 0.6em;
+        margin-left: 40%;
+    } 
 
     .gridPagoImagen {
-        grid-area: pagoDos;
-        margin-left: 16em;
+        margin-left: 0%;
     }
 
     .gridoMapa {
-        width: 100vh;
-        height: 37.5em;
-        display: grid;
-        grid-template-areas:
-            "mapaUno mapaUno"
-            "mapaDos mapaTres";
-        gap: 0.25em;
-        margin-left: 8em;
-    }
-
-    .nuestroLocalGrid {
-        grid-area: mapaUno;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        height: 30.5em;
+        width:100%;
+        align-items: end;
         justify-content: center;
-        align-items: center;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 20px;
-    }
-
-    .gridMapa {
-        grid-area: mapaDos;
-    }
-
-    .gridImagenMapa {
-        grid-area: mapaTres;
-    }
-
-    .tamañoImagenMapa {
-        height: 21.875em;
-        width: 31.25em;
-    }
-
-    footer {
-        height: 3.75em;
-        width: 80.75em;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        margin: 0%;
     }
 
     .gridsComedor {
         height: auto;
-        width: 80em;
-        display: grid;
-        grid-template-areas:
-            "GridsComedorUno GridsComedorUno GridsComedorUno"
-            "GridsComedorDos GridsComedorTres GridsComedorCuatro"
-            "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
-            "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
-            "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
-            "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
-        justify-content: center;
-        align-items: stretch;
-        justify-items: center;
-        gap: 0.6em;
+        width: 100%;
     }
 
     .gridsComedorLetritas {
-        grid-area: GridsComedorUno;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 30px;
         margin-bottom: 1em;
         margin-top: 1em;
     }
 
-    .gridsComedorDos {
-        grid-area: GridsComedorDos;
+    .gridsLiving {
+        height: auto;
+        width: 100%;
     }
 
-    .gridsComedorTres {
-        grid-area: GridsComedorTres;
-    }
-
-    .gridsComedorCuatro {
-        grid-area: GridsComedorCuatro;
-    }
-
-    .gridsComedorCinco {
-        grid-area: GridsComedorCinco;
-    }
-
-    .gridsComedorSeis {
-        grid-area: GridsComedorSeis;
-    }
-
-    .gridsComedorSiete {
-        grid-area: GridsComedorSiete;
-    }
-
-    .gridsComedorOcho {
-        grid-area: GridsComedorOcho;
-    }
-
-    .gridsComedorNueve {
-        grid-area: GridsComedorNueve;
-    }
-
-    .gridsComedorDiez {
-        grid-area: GridsComedorDiez;
-    }
-
-    .gridsComedorOnce {
-        grid-area: GridsComedorOnce;
-    }
-
-    .gridsComedorDoce {
-        grid-area: GridsComedorDoce;
-    }
-
-    .gridsComedorTrece {
-        grid-area: GridsComedorTrece;
-    }
-
-    .gridsComedorCatorce {
-        grid-area: GridsComedorCatorce;
-    }
-
-    .gridsComedorQuince {
-        grid-area: GridsComedorQuince;
-    }
-
-    .gridsComedorDieciseis {
-        grid-area: GridsComedorDieciseis;
-    }
-
-.gridsLiving{
-    height: auto;
-    width: 80em;
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-    grid-template-areas: 
-"gridLivingLetritas gridLivingLetritas gridLivingLetritas"
-"gridLivingUno gridLivingDos gridLivingTres"
-"gridLivingCuatro gridLivingCinco gridLivingSeis"
-"gridLivingSiete gridLivingOcho gridLivingNueve"
-"gridLivingDiez gridLivingOnce gridLivingDoce"
-"gridLivingTrece gridLivingCatorce gridLivingQuince";
-}
-
-.gridsLivingLetritas{
-    grid-area: gridLivingLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-.gridsLivingUno{
-    grid-area: gridLivingUno;
-}
-
-.gridsLivingDos{
-    grid-area: gridLivingDos;
-}
-
-.gridsLivingTres{
-    grid-area: gridLivingTres;
-}
-.gridsLivingCuatro{
-    grid-area: gridLivingCuatro;
-}
-.gridsLivingCinco{
-    grid-area: gridLivingCinco;
-}
-.gridsLivingSeis{
-    grid-area: gridLivingSeis;
-}
-.gridsLivingSiete{
-    grid-area: gridLivingSiete;
-}
-.gridsLivingOcho{
-    grid-area: gridLivingOcho;
-}
-.gridsLivingNueve{
-    grid-area: gridLivingNueve;
-}
-.gridsLivingDiez{
-    grid-area: gridLivingDiez;
-}
-.gridsLivingOnce{
-    grid-area: gridLivingOnce;
-}
-.gridsLivingDoce{
-    grid-area: gridLivingDoce;
-}
-.gridsLivingTrece{
-    grid-area: gridLivingTrece;
-}
-.gridsLivingCatorce{
-    grid-area: gridLivingCatorce;
-}
-.gridsLivingQuince{
-    grid-area: gridLivingQuince;
-}
-
-.gridsCocina{
-    height: auto;
-    width: 80em;
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-grid-template-areas: 
-"gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
-"gridsCocinaUno gridsCocinaDos gridsCocinaTres"
-"gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
-"gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
-"gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
-"gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
-}
-
-.gridsCocinaLetritas{
-    grid-area: gridsCocinaLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-.gridsCocinaUno{
-    grid-area: gridsCocinaUno;
-}
-.gridsCocinaDos{
-    grid-area: gridsCocinaDos;
-}
-.gridsCocinaTres{
-    grid-area: gridsCocinaTres;
-}
-
-.gridsCocinaCuatro{
-    grid-area: gridsCocinaCuatro;
-}
-
-.gridsCocinaCinco{
-    grid-area: gridsCocinaCinco;
-}
-
-.gridsCocinaSeis{
-    grid-area: gridsCocinaSeis;
-}
-
-.gridsCocinaSiete{
-    grid-area: gridsCocinaSiete;
-}
-
-.gridsCocinaOcho{
-    grid-area: gridsCocinaOcho;
-}
-
-.gridsCocinaNueve{
-    grid-area: gridsCocinaNueve;
-}
-
-.gridsCocinaDiez{
-    grid-area: gridsCocinaDiez;
-}
-
-.gridsCocinaOnce{
-    grid-area: gridsCocinaOnce;
-}
-
-.gridsCocinaDoce{
-    grid-area: gridsCocinaDoce;
-}
-
-.gridsCocinaTrece{
-    grid-area: gridsCocinaTrece;
-}
-
-.gridsCocinaCatorce{
-    grid-area: gridsCocinaCatorce;
-}
-
-.gridsCocinaQuince{
-    grid-area: gridsCocinaQuince;
-}
-
-
-}
-
-
-
-
-
-
-@media (min-width: 1024px){
-
-
-    body {
-        background-image: linear-gradient(to bottom, #b6dee3, #aed9e3, #a7d3e3, #a2cde3, #9fc6e3, #9abede, #95b6d8, #90aed2, #86a3c7, #7c98bc, #728eb1, #6883a6);
-    }
-
-    header {
-        height: 8em;
-        width: 80.72em;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        position: sticky;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    header nav ul li a {
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 20px;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-    }
-
-    ul {
-        width: 30em;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 5em;
-    }
-
-    .tamañoLogoHeader {
-        height: 4em;
-        width: auto;
-    }
-
-    .tamañoDeimagenNuestoLocal {
-        height: 30em;
-        width: auto;
-        margin-left: 10em;
-        margin-right: 10em;
-        margin-top: 1.25em;
-    }
-
-    .centrarImagenLocal {
-        width: 100vh;
-        height: 34.375em;
+    .gridsLivingLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
 
 
-    .gridMejoresOfertas {
-        display: grid;
-        grid-template-areas:
-            "tituloLocal tituloLocal"
-            "ImagenUnoLocal ImagenDosLocal"
-            "ImagenTresLocal ImagenCuatroLocal";
-        gap: 0.625em;
-        margin-bottom: 0.6em;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
+    .gridsCocina {
+        height: auto;
+        width: 100%;
     }
 
-    .nombreOfertasGrid {
-        grid-area: tituloLocal;
-        margin-bottom: 0.6em;
-        margin-left: 27em;
-    }
-
-    .nombreOfertasGridDos {
-        grid-area: ImagenUnoLocal;
-        margin-left: 9.25em;
-    }
-
-    .nombreOfertasGridTres {
-        grid-area: ImagenDosLocal;
-    }
-
-    .nombreOfertasGridCuatro {
-        grid-area: ImagenTresLocal;
-        margin-left: 9.25em;
-    }
-
-    .nombreOfertasGridCinco {
-        grid-area: ImagenCuatroLocal;
-    }
-
-    .gridMejoresOfertas a img {
-        height: 20em;
-        width: auto;
-    }
-
-    .gridMetodoPago {
-        height: 20.875em;
-        width: 100vh;
-        display: grid;
-        grid-template-areas:
-            "pagoUno pagoUno"
-            "pagoDos pagoDos";
-
-    }
-
-    .paddingMetodoPago {
-        grid-area: pagoUno;
-        margin-left: 28em;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 20px;
-    }
-
-    .gridPagoImagen {
-        grid-area: pagoDos;
-        margin-left: 16em;
-    }
-
-    .gridoMapa {
-        width: 100vh;
-        height: 37.5em;
-        display: grid;
-        grid-template-areas:
-            "mapaUno mapaUno"
-            "mapaDos mapaTres";
-        gap: 0.25em;
-        margin-left: 8em;
-    }
-
-    .nuestroLocalGrid {
-        grid-area: mapaUno;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 20px;
-    }
-
-    .gridMapa {
-        grid-area: mapaDos;
-    }
-
-    .gridImagenMapa {
-        grid-area: mapaTres;
-    }
-
-    .tamañoImagenMapa {
-        height: 21.875em;
-        width: 31.25em;
+    .gridsCocinaLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
 
     footer {
         height: 3.75em;
-        width: 80.75em;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        width: 100%;
     }
 
-    .gridsComedor {
-        height: auto;
-        width: 80em;
-        display: grid;
-        grid-template-areas:
-            "GridsComedorUno GridsComedorUno GridsComedorUno"
-            "GridsComedorDos GridsComedorTres GridsComedorCuatro"
-            "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
-            "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
-            "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
-            "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
-        justify-content: center;
-        align-items: stretch;
-        justify-items: center;
-        gap: 0.6em;
-    }
-
-    .gridsComedorLetritas {
-        grid-area: GridsComedorUno;
-        font-family: 'Nunito', sans-serif;
-        color: black;
-        font-size: 30px;
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-    .gridsComedorDos {
-        grid-area: GridsComedorDos;
-    }
-
-    .gridsComedorTres {
-        grid-area: GridsComedorTres;
-    }
-
-    .gridsComedorCuatro {
-        grid-area: GridsComedorCuatro;
-    }
-
-    .gridsComedorCinco {
-        grid-area: GridsComedorCinco;
-    }
-
-    .gridsComedorSeis {
-        grid-area: GridsComedorSeis;
-    }
-
-    .gridsComedorSiete {
-        grid-area: GridsComedorSiete;
-    }
-
-    .gridsComedorOcho {
-        grid-area: GridsComedorOcho;
-    }
-
-    .gridsComedorNueve {
-        grid-area: GridsComedorNueve;
-    }
-
-    .gridsComedorDiez {
-        grid-area: GridsComedorDiez;
-    }
-
-    .gridsComedorOnce {
-        grid-area: GridsComedorOnce;
-    }
-
-    .gridsComedorDoce {
-        grid-area: GridsComedorDoce;
-    }
-
-    .gridsComedorTrece {
-        grid-area: GridsComedorTrece;
-    }
-
-    .gridsComedorCatorce {
-        grid-area: GridsComedorCatorce;
-    }
-
-    .gridsComedorQuince {
-        grid-area: GridsComedorQuince;
-    }
-
-    .gridsComedorDieciseis {
-        grid-area: GridsComedorDieciseis;
-    }
-
-.gridsLiving{
-    height: auto;
-    width: 80em;
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-    grid-template-areas: 
-"gridLivingLetritas gridLivingLetritas gridLivingLetritas"
-"gridLivingUno gridLivingDos gridLivingTres"
-"gridLivingCuatro gridLivingCinco gridLivingSeis"
-"gridLivingSiete gridLivingOcho gridLivingNueve"
-"gridLivingDiez gridLivingOnce gridLivingDoce"
-"gridLivingTrece gridLivingCatorce gridLivingQuince";
-}
-
-.gridsLivingLetritas{
-    grid-area: gridLivingLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-.gridsLivingUno{
-    grid-area: gridLivingUno;
-}
-
-.gridsLivingDos{
-    grid-area: gridLivingDos;
-}
-
-.gridsLivingTres{
-    grid-area: gridLivingTres;
-}
-.gridsLivingCuatro{
-    grid-area: gridLivingCuatro;
-}
-.gridsLivingCinco{
-    grid-area: gridLivingCinco;
-}
-.gridsLivingSeis{
-    grid-area: gridLivingSeis;
-}
-.gridsLivingSiete{
-    grid-area: gridLivingSiete;
-}
-.gridsLivingOcho{
-    grid-area: gridLivingOcho;
-}
-.gridsLivingNueve{
-    grid-area: gridLivingNueve;
-}
-.gridsLivingDiez{
-    grid-area: gridLivingDiez;
-}
-.gridsLivingOnce{
-    grid-area: gridLivingOnce;
-}
-.gridsLivingDoce{
-    grid-area: gridLivingDoce;
-}
-.gridsLivingTrece{
-    grid-area: gridLivingTrece;
-}
-.gridsLivingCatorce{
-    grid-area: gridLivingCatorce;
-}
-.gridsLivingQuince{
-    grid-area: gridLivingQuince;
-}
-
-.gridsCocina{
-    height: auto;
-    width: 80em;
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-grid-template-areas: 
-"gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
-"gridsCocinaUno gridsCocinaDos gridsCocinaTres"
-"gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
-"gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
-"gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
-"gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
-}
-
-.gridsCocinaLetritas{
-    grid-area: gridsCocinaLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-.gridsCocinaUno{
-    grid-area: gridsCocinaUno;
-}
-.gridsCocinaDos{
-    grid-area: gridsCocinaDos;
-}
-.gridsCocinaTres{
-    grid-area: gridsCocinaTres;
-}
-
-.gridsCocinaCuatro{
-    grid-area: gridsCocinaCuatro;
-}
-
-.gridsCocinaCinco{
-    grid-area: gridsCocinaCinco;
-}
-
-.gridsCocinaSeis{
-    grid-area: gridsCocinaSeis;
-}
-
-.gridsCocinaSiete{
-    grid-area: gridsCocinaSiete;
-}
-
-.gridsCocinaOcho{
-    grid-area: gridsCocinaOcho;
-}
-
-.gridsCocinaNueve{
-    grid-area: gridsCocinaNueve;
-}
-
-.gridsCocinaDiez{
-    grid-area: gridsCocinaDiez;
-}
-
-.gridsCocinaOnce{
-    grid-area: gridsCocinaOnce;
-}
-
-.gridsCocinaDoce{
-    grid-area: gridsCocinaDoce;
-}
-
-.gridsCocinaTrece{
-    grid-area: gridsCocinaTrece;
-}
-
-.gridsCocinaCatorce{
-    grid-area: gridsCocinaCatorce;
-}
-
-.gridsCocinaQuince{
-    grid-area: gridsCocinaQuince;
-}
 
 
 }
