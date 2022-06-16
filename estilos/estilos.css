@@ -19,6 +19,11 @@ a {
     color: black;
 }
 
+a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+
 li {
     list-style: none;
 }
@@ -392,8 +397,6 @@ footer {
     grid-area: gridsCocinaQuince;
 }
 
-/* A PARTIR DE ACA DESPUES BORRAR ALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALALAL */
-
 .tamañoContactanos {
     padding-top: 0.5em;
     padding-left: 0.3em;
@@ -410,304 +413,11 @@ footer {
 
 
 
+/* aaaaaaaaaaaaaaaaaa */
 
 
 
 
-@media screen and (max-width: 767px) {
-
-    body {
-        background-image: linear-gradient(to bottom, #b6dee3, #aed9e3, #a7d3e3, #a2cde3, #9fc6e3, #9abede, #95b6d8, #90aed2, #86a3c7, #7c98bc, #728eb1, #6883a6);
-    }
-
-    header {
-        height: 8em;
-        width: 75em;
-    }
-
-    ul {
-        width: 30em;
-    }
-
-
-    .tamañoDeimagenNuestoLocal {
-        height: 30em;
-        width: auto;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 1.25em;
-    }
-
-    .centrarImagenLocal {
-        width: 100vh;
-        height: 34.375em;
-    }
-
-
-    .nombreOfertasGrid {
-        margin-bottom: 0.6em;
-        text-align: center;
-    }
-
-    .gridMejoresOfertas {
-        margin-left: 30%;
-    }
-
-    .gridMejoresOfertas a img {
-        height: 20em;
-        width: auto;
-    }
-
-    .gridMetodoPago {
-        height: 20.875em;
-        width: 90em;
-    }
-
-    .paddingMetodoPago {
-        padding-top: 0.6em;
-        text-align: center;
-    }
-
-    .gridPagoImagen {
-        margin-left: 20%;
-    }
-
-    .gridoMapa {
-        width: 100vh;
-        height: 30.5em;
-        margin-left: 25vh;
-    }
-
-    footer {
-        height: 3.75em;
-        width: 80.75em;
-    }
-
-    .gridsComedor {
-        height: auto;
-        width: 80em;
-    }
-
-    .gridsComedorLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-    .gridsLiving {
-        height: auto;
-        width: 80em;
-    }
-
-    .gridsLivingLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-
-    .gridsCocina {
-        height: auto;
-        width: 80em;
-    }
-
-    .gridsCocinaLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-
-    .formContacto {
-        margin: 0px 0px 0.6em 15%;
-        height: 35em;
-        width: 70.25em;
-    }
-
-.tamañoContactanos{
-    text-align: center;
-    padding-left: 75%;
-}
-
-.paddinContacto{
-    padding: 00.625em;
-}
-
-
-.centrarCheck{
-    padding: 50em;
-}
-
-#CentrandoUnpoco{
-padding-left: 10px;
-}
-
-.centrarTextoContacto{
-padding: 00.625em 0% 0% 15%;
-width: 90em;
-}
-
-.gridContactoCelular{
-    display: grid;
-    grid-template-areas: 
-    "gridContactoDos gridContactoDos"
-    "gridContactoTres gridContactoCuatro"
-    "gridContactoCinco gridContactoCinco";
-}
-
-.gridContactoCelular p{
-font-size: 1.3em;
-}
-
-.gridContactoDos{
-    grid-area: gridContactoDos;
-}
-
-.gridContactoTres{
-    grid-area: gridContactoTres;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.gridContactoCuatro{
-    grid-area: gridContactoCuatro;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.gridContactoCinco{
-    grid-area: gridContactoCinco;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-
-
-
-
-}
-
-
-
-
-
-@media screen and (min-width: 768px) {
-
-
-    body {
-        background-color: lightyellow;
-    }
-
-    header {
-        height: 8em;
-        width: 70em;
-    }
-
-    ul {
-        width: 30em;
-    }
-
-
-    .tamañoDeimagenNuestoLocal {
-        height: 30em;
-        width: auto;
-        margin-left: 10%;
-        margin-right: 15%;
-        margin-top: 1.25em;
-    }
-
-    .centrarImagenLocal {
-        width: 100vh;
-        height: 34.375em;
-    }
-
-
-    .nombreOfertasGrid {
-        margin-bottom: 0.6em;
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .gridMejoresOfertas {
-        margin-left: 10%
-    }
-
-    .gridMejoresOfertas a img {
-        height: 20em;
-        width: auto;
-    }
-
-    .gridMetodoPago {
-        height: 20.875em;
-        width: 100%;
-    }
-
-    .paddingMetodoPago {
-        padding-top: 0.6em;
-        text-align: center;
-        padding-left: 12em;
-    }
-
-    .gridPagoImagen {
-        margin-left: 25%;
-    }
-
-    .gridoMapa {
-        width: 100vh;
-        height: 30.5em;
-        margin-left: 5%;
-    }
-
-    footer {
-        height: 3.75em;
-        width: 80.75em;
-    }
-
-    .gridsComedor {
-        height: auto;
-        width: 80em;
-    }
-
-    .gridsComedorLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-    .gridsLiving {
-        height: auto;
-        width: 80em;
-    }
-
-    .gridsLivingLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-
-    .gridsCocina {
-        height: auto;
-        width: 80em;
-    }
-
-    .gridsCocinaLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-
-}
-
-
-
-
-@media screen and (min-width: 1024px) {
 
     body {
         background-image: linear-gradient(to bottom, #b6dee3, #b3e7e3, #b6efde, #c0f6d4, #d3fbc8, #d7f7bd, #dcf3b2, #e2efa7, #d3e39b, #c4d78f, #b6cc83, #a7c077);
@@ -720,6 +430,11 @@ font-size: 1.3em;
         top: 0px;
         background-color: #b6dee3;
         border: solid 2px black;
+    }
+
+    .tamañoLogoHeader {
+        height: 3em;
+        width: auto;
     }
 
     ul {
@@ -768,7 +483,7 @@ font-size: 1.3em;
     .paddingMetodoPago {
         padding-top: 0.6em;
         margin-left: 0%;
-        margin-right: 35%;
+        margin-right: 0%;
         text-align: center;
     }
 
@@ -832,6 +547,63 @@ font-size: 1.3em;
         width: 100%;
     }
 
+    .formContacto {
+        width: 60em;
+        height: auto;
+        margin: 0.6em 0 0.6em 2%;
+    }
 
+    .paddinContacto {
+        padding: 00.625em;
+    }
 
-}
+    .gridContacto {
+
+        display: grid;
+        grid-template-areas:
+            "gridContactoUno gridContactoDos"
+            "gridContactoUno gridContactoTres"
+            "gridContactoUno gridContactoCuatro"
+            "gridContactoUno gridContactoCinco";
+        grid-template-columns: 55% 45%;
+    }
+
+    #paddingParaEsteDiv{
+        padding-left: 0%;
+    }
+
+    .gridContactoUno {
+        grid-area: gridContactoUno;
+    }
+
+    .gridContactoDos {
+        grid-area: gridContactoDos;
+    }
+
+    .gridContactoTres {
+        grid-area: gridContactoTres;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .gridContactoCuatro {
+        grid-area: gridContactoCuatro;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .gridContactoCinco {
+        grid-area: gridContactoCinco;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+

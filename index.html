@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/estilos.css">
     <title>Muebles Sentey</title>
 </head>
@@ -12,7 +13,7 @@
 <body>
     <header>
         <h1>
-            <a href="index.html"><img class="tamañoLogoHeader" src="./img/Mueble Sentey LOGO.png"
+            <a  href="index.html"><img class="tamañoLogoHeader" src="./img/Mueble Sentey LOGO.png"
                     alt="logo de la marca"> </a>
         </h1>
         <nav>
@@ -26,7 +27,7 @@
     </header>
     <main>
         <div class="centrarImagenLocal">
-            <figure>
+            <figure >
                 <img class="tamañoDeimagenNuestoLocal" src="./img/locales-decoracion-zona-oeste-gba.jpg"
                     alt="Nuestro Local">
             </figure>
@@ -54,7 +55,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26272.71875871539!2d-58.431256137072396!3d-34.60188954967539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7a88680c55%3A0xe1297a37643deee5!2sil%20Divano%20Home%20Sillones%20y%20Deco!5e0!3m2!1ses-419!2sar!4v1654807976904!5m2!1ses-419!2sar"
                 width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <figure class="gridImagenMapa">
+            <figure class="gridImagenMapa" data-aos="zoom-in-down">
                 <img class="tamañoImagenMapa" src="./img/5.JPG" alt="Nuestro Local">
             </figure>
         </Section>
@@ -66,6 +67,11 @@
         <a href="https://www.mercadolibre.com.ar"><img src="./img/mercado-libre-logo-6.png"
                 alt="Logo de mercadolibre"></a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
