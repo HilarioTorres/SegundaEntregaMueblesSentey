@@ -6,20 +6,12 @@
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+h2:hover {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
 }
@@ -28,13 +20,9 @@ li {
     list-style: none;
 }
 
-
-header nav ul li a {
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
+main{
+    margin-top: 10px;
 }
-
 
 h2 {
     font-size: 20px;
@@ -43,20 +31,10 @@ h2 {
 }
 
 
-ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .tamañoLogoHeader {
     height: 4em;
     width: auto;
 }
-
-
 
 
 .gridMejoresOfertas {
@@ -419,191 +397,176 @@ footer {
 
 
 
-    body {
-        background-image: linear-gradient(to bottom, #b6dee3, #b3e7e3, #b6efde, #c0f6d4, #d3fbc8, #d7f7bd, #dcf3b2, #e2efa7, #d3e39b, #c4d78f, #b6cc83, #a7c077);
-    }
+body {
+    background-image: linear-gradient(to top, #ffffff, #fff6ff, #ffebee, #ffe7ce, #ffebb1, #ffebb1, #ffebb1, #ffebb1, #ffe7ce, #ffebee, #fff6ff, #ffffff);
+}
 
-    header {
-        height: 8em;
-        width: 100%;
-        position: sticky;
-        top: 0px;
-        background-color: #b6dee3;
-        border: solid 2px black;
-    }
+.tamañoLogoHeader {
+    height: 3em;
+    width: auto;
+}
 
-    .tamañoLogoHeader {
-        height: 3em;
-        width: auto;
-    }
+.tamañoDeimagenNuestoLocal {
+    height: 25em;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1.25em;
+}
 
-    ul {
-        width: 30em;
-        margin-right: 5em;
-    }
+.centrarImagenLocal {
+    width: 100%;
+    height: 36em;
+}
 
-    .tamañoDeimagenNuestoLocal {
-        height: 25em;
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 1.25em;
-    }
-
-    .centrarImagenLocal {
-        width: 100%;
-        height: 36em;
-    }
-
-    .nombreOfertasGrid {
-        font-size: 40px;
-    }
+.nombreOfertasGrid {
+    font-size: 40px;
+}
 
 
 
-    .gridMejoresOfertas {
-        margin: 0px;
-        gap: 10px;
-        align-items: end;
-        justify-content: center;
-    }
+.gridMejoresOfertas {
+    margin: 0px;
+    gap: 10px;
+    align-items: end;
+    justify-content: center;
+}
 
-    .gridMejoresOfertas a img {
-        height: 35em;
-        width: auto;
-    }
+.gridMejoresOfertas a img {
+    height: 35em;
+    width: auto;
+}
 
-    .gridMetodoPago {
-        height: 20.875em;
-        width: 100%;
-        align-items: end;
-        justify-content: center;
-    }
+.gridMetodoPago {
+    height: 20.875em;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+}
 
-    .paddingMetodoPago {
-        padding-top: 0.6em;
-        margin-left: 0%;
-        margin-right: 0%;
-        text-align: center;
-    }
+.paddingMetodoPago {
+    padding-top: 0.6em;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+}
 
-    .gridPagoImagen {
-        margin-left: 0%;
-    }
+.gridPagoImagen {
+    margin-left: 0%;
+}
 
-    .gridoMapa {
-        height: 30.5em;
-        width: 100%;
-        align-items: end;
-        justify-content: center;
-        margin: 0%;
-    }
+.gridoMapa {
+    height: 30.5em;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    margin: 0%;
+}
 
-    .gridsComedor {
-        height: auto;
-        width: 100%;
-    }
+.gridsComedor {
+    height: auto;
+    width: 100%;
+}
 
-    .gridsComedor figure {
-        border: black solid 1px;
-    }
+.gridsComedor figure {
+    border: black solid 1px;
+}
 
-    .gridsComedorLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
+.gridsComedorLetritas {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 
-    .gridsLiving {
-        height: auto;
-        width: 100%;
-    }
+.gridsLiving {
+    height: auto;
+    width: 100%;
+}
 
-    .gridsLiving figure {
-        border: black solid 1px;
-    }
+.gridsLiving figure {
+    border: black solid 1px;
+}
 
-    .gridsLivingLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
+.gridsLivingLetritas {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 
 
-    .gridsCocina {
-        height: auto;
-        width: 100%;
-    }
+.gridsCocina {
+    height: auto;
+    width: 100%;
+}
 
-    .gridsCocina figure {
-        border: black solid 1px;
-    }
+.gridsCocina figure {
+    border: black solid 1px;
+}
 
-    .gridsCocinaLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
+.gridsCocinaLetritas {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 
-    footer {
-        height: 3.75em;
-        width: 100%;
-    }
+footer {
+    height: 3.75em;
+    width: 100%;
+}
 
-    .formContacto {
-        width: 60em;
-        height: auto;
-        margin: 0.6em 0 0.6em 2%;
-    }
+.formContacto {
+    width: 60em;
+    height: auto;
+    margin: 0.6em 0 0.6em 2%;
+}
 
-    .paddinContacto {
-        padding: 00.625em;
-    }
+.paddinContacto {
+    padding: 00.625em;
+}
 
-    .gridContacto {
+.gridContacto {
 
-        display: grid;
-        grid-template-areas:
-            "gridContactoUno gridContactoDos"
-            "gridContactoUno gridContactoTres"
-            "gridContactoUno gridContactoCuatro"
-            "gridContactoUno gridContactoCinco";
-        grid-template-columns: 55% 45%;
-    }
+    display: grid;
+    grid-template-areas:
+        "gridContactoUno gridContactoDos"
+        "gridContactoUno gridContactoTres"
+        "gridContactoUno gridContactoCuatro"
+        "gridContactoUno gridContactoCinco";
+    grid-template-columns: 55% 45%;
+}
 
-    #paddingParaEsteDiv{
-        padding-left: 0%;
-    }
+#paddingParaEsteDiv {
+    padding-left: 0%;
+}
 
-    .gridContactoUno {
-        grid-area: gridContactoUno;
-    }
+.gridContactoUno {
+    grid-area: gridContactoUno;
+}
 
-    .gridContactoDos {
-        grid-area: gridContactoDos;
-    }
+.gridContactoDos {
+    grid-area: gridContactoDos;
+}
 
-    .gridContactoTres {
-        grid-area: gridContactoTres;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-    }
+.gridContactoTres {
+    grid-area: gridContactoTres;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-    .gridContactoCuatro {
-        grid-area: gridContactoCuatro;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-    }
+.gridContactoCuatro {
+    grid-area: gridContactoCuatro;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-    .gridContactoCinco {
-        grid-area: gridContactoCinco;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
+.gridContactoCinco {
+    grid-area: gridContactoCinco;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
