@@ -453,7 +453,9 @@ body {
 
 @media (min-width: 1024px) {
 
-
+    main {
+        margin-top: 5%;
+    }
 
     .tamañoDeimagenNuestoLocal {
         height: 25em;
@@ -472,13 +474,18 @@ body {
         font-size: 40px;
     }
 
-
-
     .gridMejoresOfertas {
-        margin: 0px;
-        gap: 10px;
-        align-items: end;
-        justify-content: center;
+        display: grid;
+        grid-template-areas:
+            "tituloLocal tituloLocal"
+            "ImagenUnoLocal ImagenDosLocal"
+            "ImagenTresLocal ImagenCuatroLocal";
+            align-items: end;
+            justify-content: center;
+        gap: 0.625em;
+        margin-bottom: 0.6em;
+        margin-top: 00.6em;
+        text-align: center;
     }
 
     .gridMejoresOfertas a img {
@@ -505,12 +512,41 @@ body {
     }
 
     .gridoMapa {
+        display: grid;
+        grid-template-areas:
+            "mapaUno mapaUno"
+            "mapaDos mapaTres";
+        gap: 0.25em;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .gridoMapa {
         height: 30.5em;
         width: 100%;
         align-items: end;
         justify-content: center;
         margin: 0%;
     }
+
+
+    
+    .tamañoImagenMetodoDePago{
+        height: auto;
+        width: auto;
+    }
+    
+    .gridMapa {
+        height: 21.875em;
+        width: 31.25em;
+    }
+    
+    .tamañoImagenMapa{
+        height: 21.875em;
+        width: 31.25em;
+    }
+    
+
 
     .gridsComedor {
         height: auto;
