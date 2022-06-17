@@ -16,12 +16,22 @@ h2:hover {
     text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
 }
 
+.paddingMetodoPago:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+
+.nuestroLocalGrid:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+
 li {
     list-style: none;
 }
 
-main{
-    margin-top: 10px;
+main {
+    margin-top: 25%;
 }
 
 h2 {
@@ -30,23 +40,18 @@ h2 {
     color: black;
 }
 
-
-.tamañoLogoHeader {
-    height: 4em;
-    width: auto;
-}
-
-
 .gridMejoresOfertas {
     display: grid;
     grid-template-areas:
-        "tituloLocal tituloLocal"
-        "ImagenUnoLocal ImagenDosLocal"
-        "ImagenTresLocal ImagenCuatroLocal";
+        "tituloLocal"
+        "ImagenUnoLocal"
+        "ImagenDosLocal"
+        "ImagenTresLocal"
+        "ImagenCuatroLocal";
     gap: 0.625em;
     margin-bottom: 0.6em;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    margin-top: 00.6em;
+    text-align: center;
 }
 
 .nombreOfertasGrid {
@@ -74,6 +79,8 @@ h2 {
     grid-template-areas:
         "pagoUno pagoUno"
         "pagoDos pagoDos";
+        align-items: center;
+    justify-items: center;
 }
 
 .paddingMetodoPago {
@@ -91,8 +98,11 @@ h2 {
     display: grid;
     grid-template-areas:
         "mapaUno mapaUno"
-        "mapaDos mapaTres";
+        "mapaDos mapaDos"
+        "mapaTres mapaTres";
     gap: 0.25em;
+    align-items: center;
+    justify-items: center;
 }
 
 .nuestroLocalGrid {
@@ -389,6 +399,38 @@ footer {
 }
 
 
+.tamañoImagenOfertas {
+    height: 12.5em;
+    width: auto;
+}
+
+.paddingMetodoPago{
+    text-align: center;
+}
+
+.tamañoImagenMetodoDePago{
+    height: 6em;
+    width: auto;
+}
+
+.gridMapa {
+    height: 8em;
+    width: auto;
+}
+
+.tamañoImagenMapa{
+    height: 12em;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* aaaaaaaaaaaaaaaaaa */
@@ -401,172 +443,181 @@ body {
     background-image: linear-gradient(to top, #ffffff, #fff6ff, #ffebee, #ffe7ce, #ffebb1, #ffebb1, #ffebb1, #ffebb1, #ffe7ce, #ffebee, #fff6ff, #ffffff);
 }
 
+
 .tamañoLogoHeader {
     height: 3em;
     width: auto;
 }
 
-.tamañoDeimagenNuestoLocal {
-    height: 25em;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 1.25em;
-}
 
-.centrarImagenLocal {
-    width: 100%;
-    height: 36em;
-}
 
-.nombreOfertasGrid {
-    font-size: 40px;
-}
+@media (min-width: 1024px) {
 
 
 
-.gridMejoresOfertas {
-    margin: 0px;
-    gap: 10px;
-    align-items: end;
-    justify-content: center;
-}
+    .tamañoDeimagenNuestoLocal {
+        height: 25em;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 1.25em;
+    }
 
-.gridMejoresOfertas a img {
-    height: 35em;
-    width: auto;
-}
+    .centrarImagenLocal {
+        width: 100%;
+        height: 36em;
+    }
 
-.gridMetodoPago {
-    height: 20.875em;
-    width: 100%;
-    align-items: end;
-    justify-content: center;
-}
-
-.paddingMetodoPago {
-    padding-top: 0.6em;
-    margin-left: 0%;
-    margin-right: 0%;
-    text-align: center;
-}
-
-.gridPagoImagen {
-    margin-left: 0%;
-}
-
-.gridoMapa {
-    height: 30.5em;
-    width: 100%;
-    align-items: end;
-    justify-content: center;
-    margin: 0%;
-}
-
-.gridsComedor {
-    height: auto;
-    width: 100%;
-}
-
-.gridsComedor figure {
-    border: black solid 1px;
-}
-
-.gridsComedorLetritas {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-.gridsLiving {
-    height: auto;
-    width: 100%;
-}
-
-.gridsLiving figure {
-    border: black solid 1px;
-}
-
-.gridsLivingLetritas {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
+    .nombreOfertasGrid {
+        font-size: 40px;
+    }
 
 
-.gridsCocina {
-    height: auto;
-    width: 100%;
-}
 
-.gridsCocina figure {
-    border: black solid 1px;
-}
+    .gridMejoresOfertas {
+        margin: 0px;
+        gap: 10px;
+        align-items: end;
+        justify-content: center;
+    }
 
-.gridsCocinaLetritas {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
+    .gridMejoresOfertas a img {
+        height: 35em;
+        width: auto;
+    }
 
-footer {
-    height: 3.75em;
-    width: 100%;
-}
+    .gridMetodoPago {
+        height: 20.875em;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+    }
 
-.formContacto {
-    width: 60em;
-    height: auto;
-    margin: 0.6em 0 0.6em 2%;
-}
+    .paddingMetodoPago {
+        padding-top: 0.6em;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
 
-.paddinContacto {
-    padding: 00.625em;
-}
+    .gridPagoImagen {
+        margin-left: 0%;
+    }
 
-.gridContacto {
+    .gridoMapa {
+        height: 30.5em;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+        margin: 0%;
+    }
 
-    display: grid;
-    grid-template-areas:
-        "gridContactoUno gridContactoDos"
-        "gridContactoUno gridContactoTres"
-        "gridContactoUno gridContactoCuatro"
-        "gridContactoUno gridContactoCinco";
-    grid-template-columns: 55% 45%;
-}
+    .gridsComedor {
+        height: auto;
+        width: 100%;
+    }
 
-#paddingParaEsteDiv {
-    padding-left: 0%;
-}
+    .gridsComedor figure {
+        border: black solid 1px;
+    }
 
-.gridContactoUno {
-    grid-area: gridContactoUno;
-}
+    .gridsComedorLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
 
-.gridContactoDos {
-    grid-area: gridContactoDos;
-}
+    .gridsLiving {
+        height: auto;
+        width: 100%;
+    }
 
-.gridContactoTres {
-    grid-area: gridContactoTres;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
+    .gridsLiving figure {
+        border: black solid 1px;
+    }
 
-.gridContactoCuatro {
-    grid-area: gridContactoCuatro;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
+    .gridsLivingLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
 
-.gridContactoCinco {
-    grid-area: gridContactoCinco;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
+
+    .gridsCocina {
+        height: auto;
+        width: 100%;
+    }
+
+    .gridsCocina figure {
+        border: black solid 1px;
+    }
+
+    .gridsCocinaLetritas {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    footer {
+        height: 3.75em;
+        width: 100%;
+    }
+
+    .formContacto {
+        width: 60em;
+        height: auto;
+        margin: 0.6em 0 0.6em 2%;
+    }
+
+    .paddinContacto {
+        padding: 00.625em;
+    }
+
+    .gridContacto {
+
+        display: grid;
+        grid-template-areas:
+            "gridContactoUno gridContactoDos"
+            "gridContactoUno gridContactoTres"
+            "gridContactoUno gridContactoCuatro"
+            "gridContactoUno gridContactoCinco";
+        grid-template-columns: 55% 45%;
+    }
+
+    #paddingParaEsteDiv {
+        padding-left: 0%;
+    }
+
+    .gridContactoUno {
+        grid-area: gridContactoUno;
+    }
+
+    .gridContactoDos {
+        grid-area: gridContactoDos;
+    }
+
+    .gridContactoTres {
+        grid-area: gridContactoTres;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .gridContactoCuatro {
+        grid-area: gridContactoCuatro;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .gridContactoCinco {
+        grid-area: gridContactoCinco;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
 }
