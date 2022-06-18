@@ -79,7 +79,7 @@ h2 {
     grid-template-areas:
         "pagoUno pagoUno"
         "pagoDos pagoDos";
-        align-items: center;
+    align-items: center;
     justify-items: center;
 }
 
@@ -140,28 +140,28 @@ footer {
     margin-bottom: 5px;
 }
 
-.tamañoMercadoLibreLogo{
-height: 45px;
-width: auto;
+.tamañoMercadoLibreLogo {
+    height: 45px;
+    width: auto;
 }
 
 .gridsComedor {
     display: grid;
     grid-template-areas:
         "GridsComedorUno"
-        "GridsComedorDos" 
-        " GridsComedorTres" 
+        "GridsComedorDos"
+        " GridsComedorTres"
         " GridsComedorCuatro"
-        "GridsComedorCinco" 
-        " GridsComedorSeis" 
+        "GridsComedorCinco"
+        " GridsComedorSeis"
         " GridsComedorSiete"
-        "GridsComedorOcho" 
-        " GridsComedorNueve" 
+        "GridsComedorOcho"
+        " GridsComedorNueve"
         " GridsComedorDiez"
-        "GridsComedorOnce" 
-        " GridsComedorDoce" 
+        "GridsComedorOnce"
+        " GridsComedorDoce"
         " GridsComedorTrece"
-        "GridsComedorCatorce" 
+        "GridsComedorCatorce"
         " GridsComedorQuince"
         " GridsComedorDieciseis";
     justify-content: center;
@@ -246,20 +246,20 @@ width: auto;
     gap: 0.6em;
     grid-template-areas:
         "gridLivingLetritas"
-        "gridLivingUno" 
-        "gridLivingDos" 
+        "gridLivingUno"
+        "gridLivingDos"
         "gridLivingTres"
-        "gridLivingCuatro" 
-        "gridLivingCinco" 
+        "gridLivingCuatro"
+        "gridLivingCinco"
         "gridLivingSeis"
-        "gridLivingSiete" 
-        "gridLivingOcho" 
+        "gridLivingSiete"
+        "gridLivingOcho"
         "gridLivingNueve"
-        "gridLivingDiez" 
-        "gridLivingOnce" 
+        "gridLivingDiez"
+        "gridLivingOnce"
         "gridLivingDoce"
-        "gridLivingTrece" 
-        "gridLivingCatorce" 
+        "gridLivingTrece"
+        "gridLivingCatorce"
         "gridLivingQuince";
 }
 
@@ -337,21 +337,21 @@ width: auto;
     justify-items: center;
     gap: 0.6em;
     grid-template-areas:
-        "gridsCocinaLetritas" 
-        "gridsCocinaUno" 
-        " gridsCocinaDos" 
+        "gridsCocinaLetritas"
+        "gridsCocinaUno"
+        " gridsCocinaDos"
         " gridsCocinaTres"
-        "gridsCocinaCuatro" 
-        " gridsCocinaCinco" 
+        "gridsCocinaCuatro"
+        " gridsCocinaCinco"
         " gridsCocinaSeis"
-        "gridsCocinaSiete" 
-        " gridsCocinaOcho" 
+        "gridsCocinaSiete"
+        " gridsCocinaOcho"
         " gridsCocinaNueve"
-        "gridsCocinaDiez" 
-        " gridsCocinaOnce" 
+        "gridsCocinaDiez"
+        " gridsCocinaOnce"
         " gridsCocinaDoce"
-        "gridsCocinaTrece" 
-        " gridsCocinaCatorce" 
+        "gridsCocinaTrece"
+        " gridsCocinaCatorce"
         " gridsCocinaQuince";
 }
 
@@ -430,13 +430,13 @@ width: auto;
 }
 
 .formContacto {
-    border: 2px black solid;
+    border: 1px black solid;
     border-radius: 2%;
     background: rgb(182, 182, 182);
     background: linear-gradient(180deg, rgba(182, 182, 182, 0.5256477591036415) 0%, rgba(182, 182, 182, 0.4864320728291317) 50%, rgba(182, 182, 182, 0.48363095238095233) 100%);
 }
 
-.marginContactoResponsive{
+.marginContactoResponsive {
     margin: 1% 0% 0% 2%;
 }
 
@@ -449,11 +449,11 @@ width: auto;
     width: auto;
 }
 
-.paddingMetodoPago{
+.paddingMetodoPago {
     text-align: center;
 }
 
-.tamañoImagenMetodoDePago{
+.tamañoImagenMetodoDePago {
     height: 6em;
     width: auto;
 }
@@ -463,7 +463,7 @@ width: auto;
     width: auto;
 }
 
-.tamañoImagenMapa{
+.tamañoImagenMapa {
     height: 12em;
     width: auto;
 }
@@ -499,20 +499,19 @@ width: auto;
     margin-top: 1em;
 }
 
-
 .gridContacto {
 
     display: grid;
     grid-template-areas:
-        "gridContactoUno" 
+        "gridContactoUno"
         "gridContactoDos"
         "gridContactoTres"
         "gridContactoCuatro"
         "gridContactoCinco";
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .gridContactoUno {
@@ -572,7 +571,7 @@ body {
     width: auto;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
     .gridMejoresOfertas {
         display: grid;
@@ -580,8 +579,8 @@ body {
             "tituloLocal tituloLocal"
             "ImagenUnoLocal ImagenDosLocal"
             "ImagenTresLocal ImagenCuatroLocal";
-            align-items: end;
-            justify-content: center;
+        align-items: end;
+        justify-content: center;
         gap: 0.625em;
         margin-bottom: 0.6em;
         margin-top: 00.6em;
@@ -604,33 +603,71 @@ body {
         justify-content: center;
     }
 
-.tamañoImagenOfertas{
-    height: 15.25em;
-    width: auto;
-}
+    .tamañoImagenOfertas {
+        height: 15.25em;
+        width: auto;
+    }
 
-.tamañoImagenMetodoDePago{
-    height: 10.25em;
-    width: auto;
-}
+    .tamañoImagenMetodoDePago {
+        height: 10.25em;
+        width: auto;
+    }
 
-.gridMapa {
-    height: 15.625em;
-    width: 25em;
-}
+    .gridMapa {
+        height: 15.625em;
+        width: 25em;
+    }
 
-.tamañoImagenMapa{
-    height: 15.625em;
-    width: 25em;
-}
+    .tamañoImagenMapa {
+        height: 15.625em;
+        width: 25em;
+    }
 
+    .gridsComedor {
+        grid-template-areas:
+            "GridsComedorUno GridsComedorUno"
+            "GridsComedorDos GridsComedorTres"
+            " GridsComedorCuatro GridsComedorCinco"
+            " GridsComedorSeis GridsComedorSiete"
+            "GridsComedorOcho GridsComedorNueve"
+            " GridsComedorDiez GridsComedorOnce"
+            " GridsComedorDoce GridsComedorTrece"
+            "GridsComedorCatorce GridsComedorQuince"
+            " GridsComedorDieciseis GridsComedorDieciseis";
+    }
 
+    .gridsCocina {
+        grid-template-areas:
+            "gridsCocinaLetritas gridsCocinaLetritas"
+            "gridsCocinaUno gridsCocinaDos"
+            " gridsCocinaTres gridsCocinaCuatro"
+            " gridsCocinaCinco gridsCocinaSeis"
+            "gridsCocinaSiete gridsCocinaOcho"
+            " gridsCocinaNueve gridsCocinaDiez"
+            " gridsCocinaOnce gridsCocinaDoce"
+            "gridsCocinaTrece gridsCocinaCatorce"
+            " gridsCocinaQuince gridsCocinaQuince";
+    }
 
+    .gridsLiving {
+        grid-template-areas:
+            "gridLivingLetritas gridLivingLetritas"
+            "gridLivingUno gridLivingDos"
+            "gridLivingTres gridLivingCuatro"
+            "gridLivingCinco gridLivingSeis"
+            "gridLivingSiete gridLivingOcho"
+            "gridLivingNueve gridLivingDiez"
+            "gridLivingOnce gridLivingDoce"
+            "gridLivingTrece gridLivingCatorce"
+            "gridLivingQuince gridLivingQuince";
+    }
 
+    .formContacto {
+        width: 40em;
+        height: auto;
+        margin: 0.6em 0 0.6em 2%;
+    }
 
-
-
-    
 }
 
 @media (min-width: 1024px) {
@@ -689,22 +726,22 @@ body {
     }
 
 
-    
-    .tamañoImagenMetodoDePago{
+
+    .tamañoImagenMetodoDePago {
         height: auto;
         width: auto;
     }
-    
+
     .gridMapa {
         height: 21.875em;
         width: 31.25em;
     }
-    
-    .tamañoImagenMapa{
+
+    .tamañoImagenMapa {
         height: 21.875em;
         width: 31.25em;
     }
-    
+
     .gridsComedor {
         grid-template-areas:
             "GridsComedorUno GridsComedorUno GridsComedorUno"
