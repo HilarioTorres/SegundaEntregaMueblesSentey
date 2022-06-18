@@ -148,16 +148,27 @@ width: auto;
 .gridsComedor {
     display: grid;
     grid-template-areas:
-        "GridsComedorUno GridsComedorUno GridsComedorUno"
-        "GridsComedorDos GridsComedorTres GridsComedorCuatro"
-        "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
-        "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
-        "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
-        "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
+        "GridsComedorUno"
+        "GridsComedorDos" 
+        " GridsComedorTres" 
+        " GridsComedorCuatro"
+        "GridsComedorCinco" 
+        " GridsComedorSeis" 
+        " GridsComedorSiete"
+        "GridsComedorOcho" 
+        " GridsComedorNueve" 
+        " GridsComedorDiez"
+        "GridsComedorOnce" 
+        " GridsComedorDoce" 
+        " GridsComedorTrece"
+        "GridsComedorCatorce" 
+        " GridsComedorQuince"
+        " GridsComedorDieciseis";
     justify-content: center;
     align-items: stretch;
     justify-items: center;
     gap: 0.6em;
+    text-align: center;
 }
 
 .gridsComedorLetritas {
@@ -234,12 +245,22 @@ width: auto;
     justify-items: center;
     gap: 0.6em;
     grid-template-areas:
-        "gridLivingLetritas gridLivingLetritas gridLivingLetritas"
-        "gridLivingUno gridLivingDos gridLivingTres"
-        "gridLivingCuatro gridLivingCinco gridLivingSeis"
-        "gridLivingSiete gridLivingOcho gridLivingNueve"
-        "gridLivingDiez gridLivingOnce gridLivingDoce"
-        "gridLivingTrece gridLivingCatorce gridLivingQuince";
+        "gridLivingLetritas"
+        "gridLivingUno" 
+        "gridLivingDos" 
+        "gridLivingTres"
+        "gridLivingCuatro" 
+        "gridLivingCinco" 
+        "gridLivingSeis"
+        "gridLivingSiete" 
+        "gridLivingOcho" 
+        "gridLivingNueve"
+        "gridLivingDiez" 
+        "gridLivingOnce" 
+        "gridLivingDoce"
+        "gridLivingTrece" 
+        "gridLivingCatorce" 
+        "gridLivingQuince";
 }
 
 .gridsLivingLetritas {
@@ -316,12 +337,22 @@ width: auto;
     justify-items: center;
     gap: 0.6em;
     grid-template-areas:
-        "gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
-        "gridsCocinaUno gridsCocinaDos gridsCocinaTres"
-        "gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
-        "gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
-        "gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
-        "gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
+        "gridsCocinaLetritas" 
+        "gridsCocinaUno" 
+        " gridsCocinaDos" 
+        " gridsCocinaTres"
+        "gridsCocinaCuatro" 
+        " gridsCocinaCinco" 
+        " gridsCocinaSeis"
+        "gridsCocinaSiete" 
+        " gridsCocinaOcho" 
+        " gridsCocinaNueve"
+        "gridsCocinaDiez" 
+        " gridsCocinaOnce" 
+        " gridsCocinaDoce"
+        "gridsCocinaTrece" 
+        " gridsCocinaCatorce" 
+        " gridsCocinaQuince";
 }
 
 .gridsCocinaLetritas {
@@ -329,6 +360,7 @@ width: auto;
     font-family: 'Nunito', sans-serif;
     color: black;
     font-size: 30px;
+    text-align: center;
 }
 
 .gridsCocinaUno {
@@ -430,6 +462,35 @@ width: auto;
 }
 
 
+
+.gridsComedor figure {
+    border: black solid 1px;
+}
+
+.gridsComedorLetritas {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+.gridsLiving figure {
+    border: black solid 1px;
+}
+
+.gridsLivingLetritas {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+.gridsCocina figure {
+    border: black solid 1px;
+}
+
+.gridsCocinaLetritas {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 
 
 
@@ -588,49 +649,34 @@ body {
         width: 31.25em;
     }
     
-
-
     .gridsComedor {
-        height: auto;
-        width: 100%;
-    }
-
-    .gridsComedor figure {
-        border: black solid 1px;
-    }
-
-    .gridsComedorLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
+        grid-template-areas:
+            "GridsComedorUno GridsComedorUno GridsComedorUno"
+            "GridsComedorDos GridsComedorTres GridsComedorCuatro"
+            "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
+            "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
+            "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
+            "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
     }
 
     .gridsLiving {
-        height: auto;
-        width: 100%;
+        grid-template-areas:
+            "gridLivingLetritas gridLivingLetritas gridLivingLetritas"
+            "gridLivingUno gridLivingDos gridLivingTres"
+            "gridLivingCuatro gridLivingCinco gridLivingSeis"
+            "gridLivingSiete gridLivingOcho gridLivingNueve"
+            "gridLivingDiez gridLivingOnce gridLivingDoce"
+            "gridLivingTrece gridLivingCatorce gridLivingQuince";
     }
-
-    .gridsLiving figure {
-        border: black solid 1px;
-    }
-
-    .gridsLivingLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
 
     .gridsCocina {
-        height: auto;
-        width: 100%;
-    }
-
-    .gridsCocina figure {
-        border: black solid 1px;
-    }
-
-    .gridsCocinaLetritas {
-        margin-bottom: 1em;
-        margin-top: 1em;
+        grid-template-areas:
+            "gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
+            "gridsCocinaUno gridsCocinaDos gridsCocinaTres"
+            "gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
+            "gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
+            "gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
+            "gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
     }
 
     footer {
