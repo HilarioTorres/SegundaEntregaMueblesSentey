@@ -30,6 +30,11 @@ li {
     list-style: none;
 }
 
+nav{
+    background-color: #f8f2ed;
+    border: 1px black solid;
+}
+
 main {
     margin-top: 25%;
 }
@@ -261,6 +266,7 @@ footer {
         "gridLivingTrece"
         "gridLivingCatorce"
         "gridLivingQuince";
+        text-align: center;
 }
 
 .gridsLivingLetritas {
@@ -695,7 +701,7 @@ body {
 
 
     .gridMejoresOfertas a img {
-        height: 35em;
+        height: 20.85em;
         width: auto;
     }
 
