@@ -1,0 +1,27 @@
+
+main {
+    margin-top: 25%;
+}
+
+body {
+    background-image: linear-gradient(to top, #ffffff, #fff6ff, #ffebee, #ffe7ce, #ffebb1, #ffebb1, #ffebb1, #ffebb1, #ffe7ce, #ffebee, #fff6ff, #ffffff);
+}
+
+@media (min-width: 768px){
+
+
+    main {
+        margin-top: 10%;
+    }
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        margin-top: 5%;
+    }
+
+}

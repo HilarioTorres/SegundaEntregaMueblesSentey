@@ -1,0 +1,19 @@
+h2 {
+    font-size: 20px;
+    font-family:$Titulo;
+    color: black;
+
+    &:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+    }
+}
+
+p {
+    font-family: $Parrafo;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

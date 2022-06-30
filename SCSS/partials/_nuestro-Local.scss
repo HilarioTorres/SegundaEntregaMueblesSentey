@@ -1,0 +1,95 @@
+.gridoMapa {
+    display: grid;
+    grid-template-areas:
+        "mapaUno mapaUno"
+        "mapaDos mapaDos"
+        "mapaTres mapaTres";
+    gap: 0.25rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.nuestroLocalGrid {
+    grid-area: mapaUno;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $Titulo;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+    &:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+    }
+}
+
+.gridMapa {
+    grid-area: mapaDos;
+}
+
+.gridImagenMapa {
+    grid-area: mapaTres;
+}
+
+.gridMapa {
+    height: 8rem;
+    width: auto;
+}
+
+.tamañoImagenMapa {
+    height: 12rem;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+
+
+    .gridoMapa {
+        display: grid;
+        grid-template-areas:
+            "mapaUno mapaUno"
+            "mapaDos mapaTres";
+        gap: 0.25rem;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .gridMapa {
+        height: 15.625rem;
+        width: 25rem;
+    }
+
+    .tamañoImagenMapa {
+        height: 15.625rem;
+        width: 25rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+
+
+    .gridoMapa {
+        height: 30.5rem;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .gridMapa {
+        height: 21.875rem;
+        width: 31.25rem;
+    }
+
+    .tamañoImagenMapa {
+        height: 21.875rem;
+        width: 31.25rem;
+    }
+}

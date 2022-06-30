@@ -1,807 +1,519 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-p{
-    font-family: 'Roboto', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-h2:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
-}
-
-.paddingMetodoPago:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
-}
-
-.nuestroLocalGrid:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
-}
-
-li {
-    list-style: none;
-}
-
-nav{
-    background-color: #f8f2ed;
-    border: 1px black solid;
-}
-
-main {
-    margin-top: 25%;
-}
-
-h2 {
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 .gridMejoresOfertas {
-    display: grid;
-    grid-template-areas:
-        "tituloLocal"
-        "ImagenUnoLocal"
-        "ImagenDosLocal"
-        "ImagenTresLocal"
-        "ImagenCuatroLocal";
-    gap: 0.625em;
-    margin-bottom: 0.6em;
-    margin-top: 00.6em;
-    text-align: center;
-}
+  display: grid;
+  grid-template-areas: "tituloLocal" "ImagenUnoLocal" "ImagenDosLocal" "ImagenTresLocal" "ImagenCuatroLocal";
+  gap: 0.625rem;
+  margin-bottom: 0.6rem;
+  margin-top: 00.6rem;
+  text-align: center; }
 
 .nombreOfertasGrid {
-    grid-area: tituloLocal;
-}
+  grid-area: tituloLocal; }
 
 .nombreOfertasGridDos {
-    grid-area: ImagenUnoLocal;
-}
+  grid-area: ImagenUnoLocal; }
 
 .nombreOfertasGridTres {
-    grid-area: ImagenDosLocal;
-}
+  grid-area: ImagenDosLocal; }
 
 .nombreOfertasGridCuatro {
-    grid-area: ImagenTresLocal;
-}
+  grid-area: ImagenTresLocal; }
 
 .nombreOfertasGridCinco {
-    grid-area: ImagenCuatroLocal;
-}
-
-.gridMetodoPago {
-    display: grid;
-    grid-template-areas:
-        "pagoUno pagoUno"
-        "pagoDos pagoDos";
-    align-items: center;
-    justify-items: center;
-}
-
-.paddingMetodoPago {
-    grid-area: pagoUno;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 20px;
-}
-
-.gridPagoImagen {
-    grid-area: pagoDos;
-}
-
-.gridoMapa {
-    display: grid;
-    grid-template-areas:
-        "mapaUno mapaUno"
-        "mapaDos mapaDos"
-        "mapaTres mapaTres";
-    gap: 0.25em;
-    align-items: center;
-    justify-items: center;
-}
-
-.nuestroLocalGrid {
-    grid-area: mapaUno;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 20px;
-    text-align: center;
-}
-
-.gridMapa {
-    grid-area: mapaDos;
-}
-
-.gridImagenMapa {
-    grid-area: mapaTres;
-}
-
-.tamañoImagenMapa {
-    height: 21.875em;
-    width: 31.25em;
-}
-
-footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-bottom: 5px;
-}
-
-.tamañoMercadoLibreLogo {
-    height: 45px;
-    width: auto;
-}
-
-.gridsComedor {
-    display: grid;
-    grid-template-areas:
-        "GridsComedorUno"
-        "GridsComedorDos"
-        " GridsComedorTres"
-        " GridsComedorCuatro"
-        "GridsComedorCinco"
-        " GridsComedorSeis"
-        " GridsComedorSiete"
-        "GridsComedorOcho"
-        " GridsComedorNueve"
-        " GridsComedorDiez"
-        "GridsComedorOnce"
-        " GridsComedorDoce"
-        " GridsComedorTrece"
-        "GridsComedorCatorce"
-        " GridsComedorQuince"
-        " GridsComedorDieciseis";
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-    text-align: center;
-}
-
-.gridsComedorLetritas {
-    grid-area: GridsComedorUno;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-}
-
-.gridsComedorDos {
-    grid-area: GridsComedorDos;
-}
-
-.gridsComedorTres {
-    grid-area: GridsComedorTres;
-}
-
-.gridsComedorCuatro {
-    grid-area: GridsComedorCuatro;
-}
-
-.gridsComedorCinco {
-    grid-area: GridsComedorCinco;
-}
-
-.gridsComedorSeis {
-    grid-area: GridsComedorSeis;
-}
-
-.gridsComedorSiete {
-    grid-area: GridsComedorSiete;
-}
-
-.gridsComedorOcho {
-    grid-area: GridsComedorOcho;
-}
-
-.gridsComedorNueve {
-    grid-area: GridsComedorNueve;
-}
-
-.gridsComedorDiez {
-    grid-area: GridsComedorDiez;
-}
-
-.gridsComedorOnce {
-    grid-area: GridsComedorOnce;
-}
-
-.gridsComedorDoce {
-    grid-area: GridsComedorDoce;
-}
-
-.gridsComedorTrece {
-    grid-area: GridsComedorTrece;
-}
-
-.gridsComedorCatorce {
-    grid-area: GridsComedorCatorce;
-}
-
-.gridsComedorQuince {
-    grid-area: GridsComedorQuince;
-}
-
-.gridsComedorDieciseis {
-    grid-area: GridsComedorDieciseis;
-}
-
-.gridsLiving {
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-    grid-template-areas:
-        "gridLivingLetritas"
-        "gridLivingUno"
-        "gridLivingDos"
-        "gridLivingTres"
-        "gridLivingCuatro"
-        "gridLivingCinco"
-        "gridLivingSeis"
-        "gridLivingSiete"
-        "gridLivingOcho"
-        "gridLivingNueve"
-        "gridLivingDiez"
-        "gridLivingOnce"
-        "gridLivingDoce"
-        "gridLivingTrece"
-        "gridLivingCatorce"
-        "gridLivingQuince";
-        text-align: center;
-}
-
-.gridsLivingLetritas {
-    grid-area: gridLivingLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-}
-
-.gridsLivingUno {
-    grid-area: gridLivingUno;
-}
-
-.gridsLivingDos {
-    grid-area: gridLivingDos;
-}
-
-.gridsLivingTres {
-    grid-area: gridLivingTres;
-}
-
-.gridsLivingCuatro {
-    grid-area: gridLivingCuatro;
-}
-
-.gridsLivingCinco {
-    grid-area: gridLivingCinco;
-}
-
-.gridsLivingSeis {
-    grid-area: gridLivingSeis;
-}
-
-.gridsLivingSiete {
-    grid-area: gridLivingSiete;
-}
-
-.gridsLivingOcho {
-    grid-area: gridLivingOcho;
-}
-
-.gridsLivingNueve {
-    grid-area: gridLivingNueve;
-}
-
-.gridsLivingDiez {
-    grid-area: gridLivingDiez;
-}
-
-.gridsLivingOnce {
-    grid-area: gridLivingOnce;
-}
-
-.gridsLivingDoce {
-    grid-area: gridLivingDoce;
-}
-
-.gridsLivingTrece {
-    grid-area: gridLivingTrece;
-}
-
-.gridsLivingCatorce {
-    grid-area: gridLivingCatorce;
-}
-
-.gridsLivingQuince {
-    grid-area: gridLivingQuince;
-}
-
-.gridsCocina {
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: center;
-    gap: 0.6em;
-    grid-template-areas:
-        "gridsCocinaLetritas"
-        "gridsCocinaUno"
-        " gridsCocinaDos"
-        " gridsCocinaTres"
-        "gridsCocinaCuatro"
-        " gridsCocinaCinco"
-        " gridsCocinaSeis"
-        "gridsCocinaSiete"
-        " gridsCocinaOcho"
-        " gridsCocinaNueve"
-        "gridsCocinaDiez"
-        " gridsCocinaOnce"
-        " gridsCocinaDoce"
-        "gridsCocinaTrece"
-        " gridsCocinaCatorce"
-        " gridsCocinaQuince";
-}
-
-.gridsCocinaLetritas {
-    grid-area: gridsCocinaLetritas;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 30px;
-    text-align: center;
-}
-
-.gridsCocinaUno {
-    grid-area: gridsCocinaUno;
-}
-
-.gridsCocinaDos {
-    grid-area: gridsCocinaDos;
-}
-
-.gridsCocinaTres {
-    grid-area: gridsCocinaTres;
-}
-
-.gridsCocinaCuatro {
-    grid-area: gridsCocinaCuatro;
-}
-
-.gridsCocinaCinco {
-    grid-area: gridsCocinaCinco;
-}
-
-.gridsCocinaSeis {
-    grid-area: gridsCocinaSeis;
-}
-
-.gridsCocinaSiete {
-    grid-area: gridsCocinaSiete;
-}
-
-.gridsCocinaOcho {
-    grid-area: gridsCocinaOcho;
-}
-
-.gridsCocinaNueve {
-    grid-area: gridsCocinaNueve;
-}
-
-.gridsCocinaDiez {
-    grid-area: gridsCocinaDiez;
-}
-
-.gridsCocinaOnce {
-    grid-area: gridsCocinaOnce;
-}
-
-.gridsCocinaDoce {
-    grid-area: gridsCocinaDoce;
-}
-
-.gridsCocinaTrece {
-    grid-area: gridsCocinaTrece;
-}
-
-.gridsCocinaCatorce {
-    grid-area: gridsCocinaCatorce;
-}
-
-.gridsCocinaQuince {
-    grid-area: gridsCocinaQuince;
-}
-
-.tamañoContactanos {
-    padding-top: 0.5em;
-    padding-left: 0.3em;
-    font-size: 2.5em;
-}
-
-.formContacto {
-    border: 1px black solid;
-    border-radius: 2%;
-    background: rgb(182, 182, 182);
-    background: linear-gradient(180deg, rgba(182, 182, 182, 0.5256477591036415) 0%, rgba(182, 182, 182, 0.4864320728291317) 50%, rgba(182, 182, 182, 0.48363095238095233) 100%);
-}
-
-.marginContactoResponsive {
-    margin: 1% 0% 0% 2%;
-}
-
-.paddinContacto {
-    padding: 00.625em;
-}
+  grid-area: ImagenCuatroLocal; }
 
 .tamañoImagenOfertas {
-    height: 12.5em;
-    width: auto;
-}
-
-.paddingMetodoPago {
-    text-align: center;
-}
-
-.tamañoImagenMetodoDePago {
-    height: 6em;
-    width: auto;
-}
-
-.gridMapa {
-    height: 8em;
-    width: auto;
-}
-
-.tamañoImagenMapa {
-    height: 12em;
-    width: auto;
-}
-
-
-
-.gridsComedor figure {
-    border: black solid 1px;
-}
-
-.gridsComedorLetritas {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-
-.gridsLiving figure {
-    border: black solid 1px;
-}
-
-.gridsLivingLetritas {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-
-.gridsCocina figure {
-    border: black solid 1px;
-}
-
-.gridsCocinaLetritas {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-.gridContacto {
-
-    display: grid;
-    grid-template-areas:
-        "gridContactoUno"
-        "gridContactoDos"
-        "gridContactoTres"
-        "gridContactoCuatro"
-        "gridContactoCinco";
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.gridContactoUno {
-    grid-area: gridContactoUno;
-}
-
-.gridContactoDos {
-    grid-area: gridContactoDos;
-}
-
-.gridContactoTres {
-    grid-area: gridContactoTres;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.gridContactoCuatro {
-    grid-area: gridContactoCuatro;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.gridContactoCinco {
-    grid-area: gridContactoCinco;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-
-
-
-
-
-/* aaaaaaaaaaaaaaaaaa */
-
-
-
-
-
-body {
-    background-image: linear-gradient(to top, #ffffff, #fff6ff, #ffebee, #ffe7ce, #ffebb1, #ffebb1, #ffebb1, #ffebb1, #ffe7ce, #ffebee, #fff6ff, #ffffff);
-}
-
-
-.tamañoLogoHeader {
-    height: 3em;
-    width: auto;
-}
+  height: 12.5rem;
+  width: auto; }
 
 @media (min-width: 768px) {
-
-    .gridMejoresOfertas {
-        display: grid;
-        grid-template-areas:
-            "tituloLocal tituloLocal"
-            "ImagenUnoLocal ImagenDosLocal"
-            "ImagenTresLocal ImagenCuatroLocal";
-        align-items: end;
-        justify-content: center;
-        gap: 0.625em;
-        margin-bottom: 0.6em;
-        margin-top: 00.6em;
-        text-align: center;
-    }
-
-    main {
-        margin-top: 10%;
-    }
-
-
-    .gridoMapa {
-        display: grid;
-        grid-template-areas:
-            "mapaUno mapaUno"
-            "mapaDos mapaTres";
-        gap: 0.25em;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-    }
-
-    .tamañoImagenOfertas {
-        height: 15.25em;
-        width: auto;
-    }
-
-    .tamañoImagenMetodoDePago {
-        height: 10.25em;
-        width: auto;
-    }
-
-    .gridMapa {
-        height: 15.625em;
-        width: 25em;
-    }
-
-    .tamañoImagenMapa {
-        height: 15.625em;
-        width: 25em;
-    }
-
-    .gridsComedor {
-        grid-template-areas:
-            "GridsComedorUno GridsComedorUno"
-            "GridsComedorDos GridsComedorTres"
-            " GridsComedorCuatro GridsComedorCinco"
-            " GridsComedorSeis GridsComedorSiete"
-            "GridsComedorOcho GridsComedorNueve"
-            " GridsComedorDiez GridsComedorOnce"
-            " GridsComedorDoce GridsComedorTrece"
-            "GridsComedorCatorce GridsComedorQuince"
-            " GridsComedorDieciseis GridsComedorDieciseis";
-    }
-
-    .gridsCocina {
-        grid-template-areas:
-            "gridsCocinaLetritas gridsCocinaLetritas"
-            "gridsCocinaUno gridsCocinaDos"
-            " gridsCocinaTres gridsCocinaCuatro"
-            " gridsCocinaCinco gridsCocinaSeis"
-            "gridsCocinaSiete gridsCocinaOcho"
-            " gridsCocinaNueve gridsCocinaDiez"
-            " gridsCocinaOnce gridsCocinaDoce"
-            "gridsCocinaTrece gridsCocinaCatorce"
-            " gridsCocinaQuince gridsCocinaQuince";
-    }
-
-    .gridsLiving {
-        grid-template-areas:
-            "gridLivingLetritas gridLivingLetritas"
-            "gridLivingUno gridLivingDos"
-            "gridLivingTres gridLivingCuatro"
-            "gridLivingCinco gridLivingSeis"
-            "gridLivingSiete gridLivingOcho"
-            "gridLivingNueve gridLivingDiez"
-            "gridLivingOnce gridLivingDoce"
-            "gridLivingTrece gridLivingCatorce"
-            "gridLivingQuince gridLivingQuince";
-    }
-
-    .formContacto {
-        width: 40em;
-        height: auto;
-        margin: 0.6em 0 0.6em 2%;
-    }
-
-}
+  .gridMejoresOfertas {
+    display: grid;
+    grid-template-areas: "tituloLocal tituloLocal" "ImagenUnoLocal ImagenDosLocal" "ImagenTresLocal ImagenCuatroLocal";
+    align-items: end;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-bottom: 0.6rem;
+    margin-top: 00.6rem;
+    text-align: center; }
+  .tamañoImagenOfertas {
+    height: 15.25rem;
+    width: auto; } }
 
 @media (min-width: 1024px) {
+  .tamañoDeimagenNuestoLocal {
+    height: 25rem;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1.25rem; }
+  .centrarImagenLocal {
+    width: 100%;
+    height: 36rem; }
+  .nombreOfertasGrid {
+    font-size: 40px; }
+  .gridMejoresOfertas a img {
+    height: 20.85rem;
+    width: auto; } }
 
-    main {
-        margin-top: 5%;
-    }
+nav {
+  background-color: #f8f2ed;
+  border: 1px black solid; }
 
-    .tamañoDeimagenNuestoLocal {
-        height: 25em;
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 1.25em;
-    }
+li {
+  list-style: none; }
 
-    .centrarImagenLocal {
-        width: 100%;
-        height: 36em;
-    }
+.tamañoLogoHeader {
+  height: 3rem;
+  width: auto; }
 
-    .nombreOfertasGrid {
-        font-size: 40px;
-    }
+h2 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: black; }
+  h2:hover {
+    color: white;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
 
+p {
+  font-family: "Roboto", sans-serif; }
 
-    .gridMejoresOfertas a img {
-        height: 20.85em;
-        width: auto;
-    }
+a {
+  text-decoration: none;
+  color: black; }
 
-    .gridMetodoPago {
-        height: 20.875em;
-        width: 100%;
-        align-items: end;
-        justify-content: center;
-    }
+main {
+  margin-top: 25%; }
 
-    .paddingMetodoPago {
-        padding-top: 0.6em;
-        margin-left: 0%;
-        margin-right: 0%;
-        text-align: center;
-    }
+body {
+  background-image: linear-gradient(to top, #ffffff, #fff6ff, #ffebee, #ffe7ce, #ffebb1, #ffebb1, #ffebb1, #ffebb1, #ffe7ce, #ffebee, #fff6ff, #ffffff); }
 
-    .gridPagoImagen {
-        margin-left: 0%;
-    }
+@media (min-width: 768px) {
+  main {
+    margin-top: 10%; } }
 
-    .gridoMapa {
-        height: 30.5em;
-        width: 100%;
-        align-items: end;
-        justify-content: center;
-        margin: 0%;
-    }
+@media (min-width: 1024px) {
+  main {
+    margin-top: 5%; } }
 
+.gridMetodoPago {
+  display: grid;
+  grid-template-areas: "pagoUno pagoUno" "pagoDos pagoDos";
+  align-items: center;
+  justify-items: center; }
 
+.paddingMetodoPago {
+  grid-area: pagoUno;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 20px; }
+  .paddingMetodoPago:hover {
+    color: white;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
 
-    .tamañoImagenMetodoDePago {
-        height: auto;
-        width: auto;
-    }
+.gridPagoImagen {
+  grid-area: pagoDos; }
 
-    .gridMapa {
-        height: 21.875em;
-        width: 31.25em;
-    }
+.paddingMetodoPago {
+  text-align: center; }
 
-    .tamañoImagenMapa {
-        height: 21.875em;
-        width: 31.25em;
-    }
+.tamañoImagenMetodoDePago {
+  height: 6rem;
+  width: auto; }
 
-    .gridsComedor {
-        grid-template-areas:
-            "GridsComedorUno GridsComedorUno GridsComedorUno"
-            "GridsComedorDos GridsComedorTres GridsComedorCuatro"
-            "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
-            "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
-            "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
-            "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
-    }
+@media (min-width: 768px) {
+  .tamañoImagenMetodoDePago {
+    height: 10.25rem;
+    width: auto; } }
 
-    .gridsLiving {
-        grid-template-areas:
-            "gridLivingLetritas gridLivingLetritas gridLivingLetritas"
-            "gridLivingUno gridLivingDos gridLivingTres"
-            "gridLivingCuatro gridLivingCinco gridLivingSeis"
-            "gridLivingSiete gridLivingOcho gridLivingNueve"
-            "gridLivingDiez gridLivingOnce gridLivingDoce"
-            "gridLivingTrece gridLivingCatorce gridLivingQuince";
-    }
+@media (min-width: 1024px) {
+  .gridMetodoPago {
+    height: 20.875rem;
+    width: 100%;
+    align-items: end;
+    justify-content: center; }
+  .paddingMetodoPago {
+    padding-top: 0.6rem;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center; }
+  .gridPagoImagen {
+    margin-left: 0%; }
+  .tamañoImagenMetodoDePago {
+    height: auto;
+    width: auto; } }
 
-    .gridsCocina {
-        grid-template-areas:
-            "gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
-            "gridsCocinaUno gridsCocinaDos gridsCocinaTres"
-            "gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
-            "gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
-            "gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
-            "gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
-    }
+.gridoMapa {
+  display: grid;
+  grid-template-areas: "mapaUno mapaUno" "mapaDos mapaDos" "mapaTres mapaTres";
+  gap: 0.25rem;
+  align-items: center;
+  justify-items: center; }
 
-    footer {
-        height: 3.75em;
-        width: 100%;
-    }
+.nuestroLocalGrid {
+  grid-area: mapaUno;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 20px;
+  text-align: center; }
+  .nuestroLocalGrid:hover {
+    color: white;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
 
-    .formContacto {
-        width: 60em;
-        height: auto;
-        margin: 0.6em 0 0.6em 2%;
-    }
+.gridMapa {
+  grid-area: mapaDos; }
 
-    .gridContacto {
-        grid-template-areas:
-            "gridContactoUno gridContactoDos"
-            "gridContactoUno gridContactoTres"
-            "gridContactoUno gridContactoCuatro"
-            "gridContactoUno gridContactoCinco";
-        grid-template-columns: 55% 45%;
-    }
+.gridImagenMapa {
+  grid-area: mapaTres; }
 
+.gridMapa {
+  height: 8rem;
+  width: auto; }
 
-}
+.tamañoImagenMapa {
+  height: 12rem;
+  width: auto; }
+
+@media (min-width: 768px) {
+  .gridoMapa {
+    display: grid;
+    grid-template-areas: "mapaUno mapaUno" "mapaDos mapaTres";
+    gap: 0.25rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+  .gridMapa {
+    height: 15.625rem;
+    width: 25rem; }
+  .tamañoImagenMapa {
+    height: 15.625rem;
+    width: 25rem; } }
+
+@media (min-width: 1024px) {
+  .gridoMapa {
+    height: 30.5rem;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    margin: 0%; }
+  .gridMapa {
+    height: 21.875rem;
+    width: 31.25rem; }
+  .tamañoImagenMapa {
+    height: 21.875rem;
+    width: 31.25rem; } }
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 5px; }
+
+.tamañoMercadoLibreLogo {
+  height: 45px;
+  width: auto; }
+
+@media (min-width: 1024px) {
+  footer {
+    height: 3.75rem;
+    width: 100%; } }
+
+.gridsComedor {
+  display: grid;
+  grid-template-areas: "GridsComedorUno" "GridsComedorDos" " GridsComedorTres" " GridsComedorCuatro" "GridsComedorCinco" " GridsComedorSeis" " GridsComedorSiete" "GridsComedorOcho" " GridsComedorNueve" " GridsComedorDiez" "GridsComedorOnce" " GridsComedorDoce" " GridsComedorTrece" "GridsComedorCatorce" " GridsComedorQuince" " GridsComedorDieciseis";
+  justify-content: center;
+  align-items: stretch;
+  justify-items: center;
+  gap: 0.6rem;
+  text-align: center; }
+  .gridsComedor figure {
+    border: black solid 1px; }
+
+.gridsComedorLetritas {
+  grid-area: GridsComedorUno;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+.gridsComedorDos {
+  grid-area: GridsComedorDos; }
+
+.gridsComedorTres {
+  grid-area: GridsComedorTres; }
+
+.gridsComedorCuatro {
+  grid-area: GridsComedorCuatro; }
+
+.gridsComedorCinco {
+  grid-area: GridsComedorCinco; }
+
+.gridsComedorSeis {
+  grid-area: GridsComedorSeis; }
+
+.gridsComedorSiete {
+  grid-area: GridsComedorSiete; }
+
+.gridsComedorOcho {
+  grid-area: GridsComedorOcho; }
+
+.gridsComedorNueve {
+  grid-area: GridsComedorNueve; }
+
+.gridsComedorDiez {
+  grid-area: GridsComedorDiez; }
+
+.gridsComedorOnce {
+  grid-area: GridsComedorOnce; }
+
+.gridsComedorDoce {
+  grid-area: GridsComedorDoce; }
+
+.gridsComedorTrece {
+  grid-area: GridsComedorTrece; }
+
+.gridsComedorCatorce {
+  grid-area: GridsComedorCatorce; }
+
+.gridsComedorQuince {
+  grid-area: GridsComedorQuince; }
+
+.gridsComedorDieciseis {
+  grid-area: GridsComedorDieciseis; }
+
+@media (min-width: 768px) {
+  .gridsComedor {
+    grid-template-areas: "GridsComedorUno GridsComedorUno" "GridsComedorDos GridsComedorTres" " GridsComedorCuatro GridsComedorCinco" " GridsComedorSeis GridsComedorSiete" "GridsComedorOcho GridsComedorNueve" " GridsComedorDiez GridsComedorOnce" " GridsComedorDoce GridsComedorTrece" "GridsComedorCatorce GridsComedorQuince" " GridsComedorDieciseis GridsComedorDieciseis"; } }
+
+@media (min-width: 1024px) {
+  .gridsComedor {
+    grid-template-areas: "GridsComedorUno GridsComedorUno GridsComedorUno" "GridsComedorDos GridsComedorTres GridsComedorCuatro" "GridsComedorCinco GridsComedorSeis GridsComedorSiete" "GridsComedorOcho GridsComedorNueve GridsComedorDiez" "GridsComedorOnce GridsComedorDoce GridsComedorTrece" "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis"; } }
+
+.gridsLiving {
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: center;
+  gap: 0.6rem;
+  grid-template-areas: "gridLivingLetritas" "gridLivingUno" "gridLivingDos" "gridLivingTres" "gridLivingCuatro" "gridLivingCinco" "gridLivingSeis" "gridLivingSiete" "gridLivingOcho" "gridLivingNueve" "gridLivingDiez" "gridLivingOnce" "gridLivingDoce" "gridLivingTrece" "gridLivingCatorce" "gridLivingQuince";
+  text-align: center; }
+  .gridsLiving figure {
+    border: black solid 1px; }
+
+.gridsLivingLetritas {
+  grid-area: gridLivingLetritas;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+.gridsLivingUno {
+  grid-area: gridLivingUno; }
+
+.gridsLivingDos {
+  grid-area: gridLivingDos; }
+
+.gridsLivingTres {
+  grid-area: gridLivingTres; }
+
+.gridsLivingCuatro {
+  grid-area: gridLivingCuatro; }
+
+.gridsLivingCinco {
+  grid-area: gridLivingCinco; }
+
+.gridsLivingSeis {
+  grid-area: gridLivingSeis; }
+
+.gridsLivingSiete {
+  grid-area: gridLivingSiete; }
+
+.gridsLivingOcho {
+  grid-area: gridLivingOcho; }
+
+.gridsLivingNueve {
+  grid-area: gridLivingNueve; }
+
+.gridsLivingDiez {
+  grid-area: gridLivingDiez; }
+
+.gridsLivingOnce {
+  grid-area: gridLivingOnce; }
+
+.gridsLivingDoce {
+  grid-area: gridLivingDoce; }
+
+.gridsLivingTrece {
+  grid-area: gridLivingTrece; }
+
+.gridsLivingCatorce {
+  grid-area: gridLivingCatorce; }
+
+.gridsLivingQuince {
+  grid-area: gridLivingQuince; }
+
+@media (min-width: 768px) {
+  .gridsLiving {
+    grid-template-areas: "gridLivingLetritas gridLivingLetritas" "gridLivingUno gridLivingDos" "gridLivingTres gridLivingCuatro" "gridLivingCinco gridLivingSeis" "gridLivingSiete gridLivingOcho" "gridLivingNueve gridLivingDiez" "gridLivingOnce gridLivingDoce" "gridLivingTrece gridLivingCatorce" "gridLivingQuince gridLivingQuince"; } }
+
+@media (min-width: 1024px) {
+  .gridsLiving {
+    grid-template-areas: "gridLivingLetritas gridLivingLetritas gridLivingLetritas" "gridLivingUno gridLivingDos gridLivingTres" "gridLivingCuatro gridLivingCinco gridLivingSeis" "gridLivingSiete gridLivingOcho gridLivingNueve" "gridLivingDiez gridLivingOnce gridLivingDoce" "gridLivingTrece gridLivingCatorce gridLivingQuince"; } }
+
+.gridsCocina {
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: center;
+  gap: 0.6rem;
+  grid-template-areas: "gridsCocinaLetritas" "gridsCocinaUno" " gridsCocinaDos" " gridsCocinaTres" "gridsCocinaCuatro" " gridsCocinaCinco" " gridsCocinaSeis" "gridsCocinaSiete" " gridsCocinaOcho" " gridsCocinaNueve" "gridsCocinaDiez" " gridsCocinaOnce" " gridsCocinaDoce" "gridsCocinaTrece" " gridsCocinaCatorce" " gridsCocinaQuince"; }
+  .gridsCocina figure {
+    border: black solid 1px; }
+
+.gridsCocinaLetritas {
+  grid-area: gridsCocinaLetritas;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+.gridsCocinaUno {
+  grid-area: gridsCocinaUno; }
+
+.gridsCocinaDos {
+  grid-area: gridsCocinaDos; }
+
+.gridsCocinaTres {
+  grid-area: gridsCocinaTres; }
+
+.gridsCocinaCuatro {
+  grid-area: gridsCocinaCuatro; }
+
+.gridsCocinaCinco {
+  grid-area: gridsCocinaCinco; }
+
+.gridsCocinaSeis {
+  grid-area: gridsCocinaSeis; }
+
+.gridsCocinaSiete {
+  grid-area: gridsCocinaSiete; }
+
+.gridsCocinaOcho {
+  grid-area: gridsCocinaOcho; }
+
+.gridsCocinaNueve {
+  grid-area: gridsCocinaNueve; }
+
+.gridsCocinaDiez {
+  grid-area: gridsCocinaDiez; }
+
+.gridsCocinaOnce {
+  grid-area: gridsCocinaOnce; }
+
+.gridsCocinaDoce {
+  grid-area: gridsCocinaDoce; }
+
+.gridsCocinaTrece {
+  grid-area: gridsCocinaTrece; }
+
+.gridsCocinaCatorce {
+  grid-area: gridsCocinaCatorce; }
+
+.gridsCocinaQuince {
+  grid-area: gridsCocinaQuince; }
+
+@media (min-width: 768px) {
+  .gridsCocina {
+    grid-template-areas: "gridsCocinaLetritas gridsCocinaLetritas" "gridsCocinaUno gridsCocinaDos" " gridsCocinaTres gridsCocinaCuatro" " gridsCocinaCinco gridsCocinaSeis" "gridsCocinaSiete gridsCocinaOcho" " gridsCocinaNueve gridsCocinaDiez" " gridsCocinaOnce gridsCocinaDoce" "gridsCocinaTrece gridsCocinaCatorce" " gridsCocinaQuince gridsCocinaQuince"; } }
+
+@media (min-width: 1024px) {
+  .gridsCocina {
+    grid-template-areas: "gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas" "gridsCocinaUno gridsCocinaDos gridsCocinaTres" "gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis" "gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve" "gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce" "gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince"; } }
+
+.tamañoContactanos {
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  font-size: 2.5em; }
+
+.formContacto {
+  border: 1px black solid;
+  border-radius: 2%;
+  background: #b6b6b6;
+  background: linear-gradient(180deg, rgba(182, 182, 182, 0.525648) 0%, rgba(182, 182, 182, 0.486432) 50%, rgba(182, 182, 182, 0.483631) 100%); }
+
+.marginContactoResponsive {
+  margin: 1% 0% 0% 2%; }
+
+.paddinContacto {
+  padding: 00.625rem; }
+
+.gridContacto {
+  display: grid;
+  grid-template-areas: "gridContactoUno" "gridContactoDos" "gridContactoTres" "gridContactoCuatro" "gridContactoCinco";
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+
+.gridContactoUno {
+  grid-area: gridContactoUno; }
+
+.gridContactoDos {
+  grid-area: gridContactoDos; }
+
+.gridContactoTres {
+  grid-area: gridContactoTres;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start; }
+
+.gridContactoCuatro {
+  grid-area: gridContactoCuatro;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start; }
+
+.gridContactoCinco {
+  grid-area: gridContactoCinco;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start; }
+
+@media (min-width: 768px) {
+  .formContacto {
+    width: 40rem;
+    height: auto;
+    margin: 0.6rem 0 0.6rem 2%; } }
+
+@media (min-width: 1024px) {
+  .formContacto {
+    width: 60rem;
+    height: auto;
+    margin: 0.6rem 0 0.6rem 2%; }
+  .gridContacto {
+    grid-template-areas: "gridContactoUno gridContactoDos" "gridContactoUno gridContactoTres" "gridContactoUno gridContactoCuatro" "gridContactoUno gridContactoCinco";
+    grid-template-columns: 55% 45%; } }
