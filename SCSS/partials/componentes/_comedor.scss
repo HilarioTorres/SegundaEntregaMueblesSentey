@@ -23,14 +23,14 @@
     gap: 0.6rem;
     text-align: center;
 
-    figure {
-        border: black solid 1px;
-    }
+    figure a img{
+        @include borde-Radius(map-get($colores, "colorSecundario"))
+            }
 }
 
 .gridsComedorLetritas {
     grid-area: GridsComedorUno;
-    font-family: $Titulo;
+    font-family: 'Nunito', sans-serif;
     color: black;
     font-size: 30px;
     margin-bottom: 1rem;

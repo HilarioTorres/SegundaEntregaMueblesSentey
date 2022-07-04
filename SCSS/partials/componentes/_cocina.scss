@@ -22,15 +22,15 @@
         " gridsCocinaCatorce"
         " gridsCocinaQuince";
 
-    figure {
-        border: black solid 1px;
-    }
+        figure a img{
+            @include borde-Radius(map-get($colores, "colorSecundario"))
+                }
 }
 
 .gridsCocinaLetritas {
     grid-area: gridsCocinaLetritas;
-    font-family: $Titulo;
-    color: black;
+    font-family: 'Nunito', sans-serif;
+    color:map-get($colores, "colorPrimario");
     font-size: 30px;
     text-align: center;
     margin-bottom: 1rem;

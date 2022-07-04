@@ -6,6 +6,9 @@
   margin: 0;
   box-sizing: border-box; }
 
+.margin-leve {
+  margin: 2px 0px; }
+
 .gridMejoresOfertas {
   display: grid;
   grid-template-areas: "tituloLocal" "ImagenUnoLocal" "ImagenDosLocal" "ImagenTresLocal" "ImagenCuatroLocal";
@@ -76,14 +79,14 @@ li {
 
 h2 {
   font-size: 20px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: black; }
   h2:hover {
     color: white;
     text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
 
 p {
-  font-family: "Roboto", sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 a {
   text-decoration: none;
@@ -111,7 +114,7 @@ body {
 
 .paddingMetodoPago {
   grid-area: pagoUno;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: black;
   font-size: 20px; }
   .paddingMetodoPago:hover {
@@ -164,7 +167,7 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: black;
   font-size: 20px;
   text-align: center; }
@@ -240,12 +243,13 @@ footer {
   justify-items: center;
   gap: 0.6rem;
   text-align: center; }
-  .gridsComedor figure {
-    border: black solid 1px; }
+  .gridsComedor figure a img {
+    border: #0f0f0f solid 1px;
+    border-radius: 5%; }
 
 .gridsComedorLetritas {
   grid-area: GridsComedorUno;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: black;
   font-size: 30px;
   margin-bottom: 1rem;
@@ -312,12 +316,13 @@ footer {
   gap: 0.6rem;
   grid-template-areas: "gridLivingLetritas" "gridLivingUno" "gridLivingDos" "gridLivingTres" "gridLivingCuatro" "gridLivingCinco" "gridLivingSeis" "gridLivingSiete" "gridLivingOcho" "gridLivingNueve" "gridLivingDiez" "gridLivingOnce" "gridLivingDoce" "gridLivingTrece" "gridLivingCatorce" "gridLivingQuince";
   text-align: center; }
-  .gridsLiving figure {
-    border: black solid 1px; }
+  .gridsLiving figure a img {
+    border: #0f0f0f solid 1px;
+    border-radius: 5%; }
 
 .gridsLivingLetritas {
   grid-area: gridLivingLetritas;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: black;
   font-size: 30px;
   margin-bottom: 1rem;
@@ -383,12 +388,13 @@ footer {
   justify-items: center;
   gap: 0.6rem;
   grid-template-areas: "gridsCocinaLetritas" "gridsCocinaUno" " gridsCocinaDos" " gridsCocinaTres" "gridsCocinaCuatro" " gridsCocinaCinco" " gridsCocinaSeis" "gridsCocinaSiete" " gridsCocinaOcho" " gridsCocinaNueve" "gridsCocinaDiez" " gridsCocinaOnce" " gridsCocinaDoce" "gridsCocinaTrece" " gridsCocinaCatorce" " gridsCocinaQuince"; }
-  .gridsCocina figure {
-    border: black solid 1px; }
+  .gridsCocina figure a img {
+    border: #0f0f0f solid 1px;
+    border-radius: 5%; }
 
 .gridsCocinaLetritas {
   grid-area: gridsCocinaLetritas;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: black;
   font-size: 30px;
   text-align: center;

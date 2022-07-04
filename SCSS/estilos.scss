@@ -7,16 +7,18 @@
     box-sizing: border-box;
 }
 
-@import "partials/variables";
-@import "partials/mejores-ofertas";
-@import "partials/header";
-@import "partials/tamaño-Titulos";
-@import "partials/main";
-@import "partials/metodo-de-pago";
-@import "partials/nuestro-Local";
-@import "partials/footers";
-@import "partials/comedor";
-@import "partials/living";
-@import "partials/cocina";
-@import "partials/contacto";
+@import "./partials/base/variables";
+@import "./partials/base/mixins";
+@import "./partials/base/extends";
+@import "./partials/componentes/mejores-ofertas";
+@import "./partials/layout/header";
+@import "./partials/componentes/tamaño-Titulos";
+@import "./partials/layout/main";
+@import "./partials/componentes/metodo-de-pago";
+@import "./partials/componentes/nuestro-Local";
+@import "./partials/layout/footers";
+@import "./partials/componentes/comedor";
+@import "./partials/componentes/living";
+@import "./partials/componentes/cocina";
+@import "./partials/componentes/contacto";
 

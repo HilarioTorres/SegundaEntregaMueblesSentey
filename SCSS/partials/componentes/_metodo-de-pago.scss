@@ -10,8 +10,8 @@
 
 .paddingMetodoPago {
     grid-area: pagoUno;
-    font-family: $Titulo;
-    color: black;
+    font-family: 'Nunito', sans-serif;
+    color: map-get($colores, "colorPrimario");
     font-size: 20px;
 
     &:hover {

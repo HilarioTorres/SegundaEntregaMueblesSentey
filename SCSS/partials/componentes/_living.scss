@@ -23,15 +23,15 @@
         "gridLivingQuince";
     text-align: center;
 
-    figure {
-        border: black solid 1px;
+    figure a img{
+@include borde-Radius(map-get($colores, "colorSecundario"))
     }
 }
 
 .gridsLivingLetritas {
     grid-area: gridLivingLetritas;
-    font-family: $Titulo;
-    color: black;
+    font-family: 'Nunito', sans-serif;
+    color: map-get($colores, "colorPrimario");
     font-size: 30px;
     margin-bottom: 1rem;
     margin-top: 1rem;
