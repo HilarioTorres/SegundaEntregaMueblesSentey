@@ -2,9 +2,7 @@
     display: grid;
     grid-template-areas:
         "mapaUno mapaUno"
-        "mapaDos mapaDos"
-        "mapaTres mapaTres";
-    gap: 0.25rem;
+        "mapaDos mapaDos";
     align-items: center;
     justify-items: center;
 }
@@ -29,45 +27,18 @@
 
 .gridMapa {
     grid-area: mapaDos;
-}
-
-.gridImagenMapa {
-    grid-area: mapaTres;
-}
-
-.gridMapa {
     height: 8rem;
-    width: auto;
-}
-
-.tamañoImagenMapa {
-    height: 12rem;
     width: auto;
 }
 
 @media (min-width: 768px) {
 
 
-    .gridoMapa {
-        display: grid;
-        grid-template-areas:
-            "mapaUno mapaUno"
-            "mapaDos mapaTres";
-        gap: 0.25rem;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-    }
-
     .gridMapa {
         height: 15.625rem;
         width: 25rem;
     }
 
-    .tamañoImagenMapa {
-        height: 15.625rem;
-        width: 25rem;
-    }
 
 }
 
@@ -88,8 +59,4 @@
         width: 31.25rem;
     }
 
-    .tamañoImagenMapa {
-        height: 21.875rem;
-        width: 31.25rem;
-    }
 }

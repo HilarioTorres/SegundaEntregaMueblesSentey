@@ -9,6 +9,9 @@
     border-radius: 2%;
     background: rgb(182, 182, 182);
     background: linear-gradient(180deg, rgba(182, 182, 182, 0.5256477591036415) 0%, rgba(182, 182, 182, 0.4864320728291317) 50%, rgba(182, 182, 182, 0.48363095238095233) 100%);
+    width: 22.3rem;
+    height: auto;
+    margin: 0.6rem 0 0.6rem 2%;
 }
 
 .marginContactoResponsive {
@@ -74,8 +77,6 @@
 
     .formContacto {
         width: 40rem;
-        height: auto;
-        margin: 0.6rem 0 0.6rem 2%;
     }
 
 
@@ -83,11 +84,6 @@
 
 @media (min-width: 1024px) {
 
-    .formContacto {
-        width: 60rem;
-        height: auto;
-        margin: 0.6rem 0 0.6rem 2%;
-    }
 
     .gridContacto {
         grid-template-areas:
@@ -98,5 +94,13 @@
         grid-template-columns: 55% 45%;
     }
 
+
+}
+
+
+@media (min-width: 1680px) {
+    .formContacto {
+        width: 60rem;
+    }
 
 }

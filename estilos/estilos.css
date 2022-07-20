@@ -155,8 +155,7 @@ body {
 
 .gridoMapa {
   display: grid;
-  grid-template-areas: "mapaUno mapaUno" "mapaDos mapaDos" "mapaTres mapaTres";
-  gap: 0.25rem;
+  grid-template-areas: "mapaUno mapaUno" "mapaDos mapaDos";
   align-items: center;
   justify-items: center; }
 
@@ -176,31 +175,12 @@ body {
     text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black; }
 
 .gridMapa {
-  grid-area: mapaDos; }
-
-.gridImagenMapa {
-  grid-area: mapaTres; }
-
-.gridMapa {
+  grid-area: mapaDos;
   height: 8rem;
   width: auto; }
 
-.tamañoImagenMapa {
-  height: 12rem;
-  width: auto; }
-
 @media (min-width: 768px) {
-  .gridoMapa {
-    display: grid;
-    grid-template-areas: "mapaUno mapaUno" "mapaDos mapaTres";
-    gap: 0.25rem;
-    align-items: center;
-    justify-items: center;
-    justify-content: center; }
   .gridMapa {
-    height: 15.625rem;
-    width: 25rem; }
-  .tamañoImagenMapa {
     height: 15.625rem;
     width: 25rem; } }
 
@@ -212,9 +192,6 @@ body {
     justify-content: center;
     margin: 0%; }
   .gridMapa {
-    height: 21.875rem;
-    width: 31.25rem; }
-  .tamañoImagenMapa {
     height: 21.875rem;
     width: 31.25rem; } }
 
@@ -463,7 +440,10 @@ footer {
   border: 1px black solid;
   border-radius: 2%;
   background: #b6b6b6;
-  background: linear-gradient(180deg, rgba(182, 182, 182, 0.525648) 0%, rgba(182, 182, 182, 0.486432) 50%, rgba(182, 182, 182, 0.483631) 100%); }
+  background: linear-gradient(180deg, rgba(182, 182, 182, 0.525648) 0%, rgba(182, 182, 182, 0.486432) 50%, rgba(182, 182, 182, 0.483631) 100%);
+  width: 22.3rem;
+  height: auto;
+  margin: 0.6rem 0 0.6rem 2%; }
 
 .marginContactoResponsive {
   margin: 1% 0% 0% 2%; }
@@ -511,15 +491,96 @@ footer {
 
 @media (min-width: 768px) {
   .formContacto {
-    width: 40rem;
-    height: auto;
-    margin: 0.6rem 0 0.6rem 2%; } }
+    width: 40rem; } }
 
 @media (min-width: 1024px) {
-  .formContacto {
-    width: 60rem;
-    height: auto;
-    margin: 0.6rem 0 0.6rem 2%; }
   .gridContacto {
     grid-template-areas: "gridContactoUno gridContactoDos" "gridContactoUno gridContactoTres" "gridContactoUno gridContactoCuatro" "gridContactoUno gridContactoCinco";
     grid-template-columns: 55% 45%; } }
+
+@media (min-width: 1680px) {
+  .formContacto {
+    width: 60rem; } }
+
+.historia-uno h2 {
+  margin: 0rem 1rem;
+  text-align: start; }
+
+.historia-uno div {
+  display: grid;
+  align-items: end;
+  justify-items: center; }
+  .historia-uno div p {
+    margin: 0rem 1rem; }
+  .historia-uno div figure img {
+    width: 22rem;
+    height: auto; }
+
+.historia-dos h2 {
+  margin: 0rem 1rem;
+  text-align: start; }
+
+.historia-dos div {
+  display: grid;
+  align-items: end;
+  justify-items: center; }
+  .historia-dos div p {
+    margin: 0rem 1rem; }
+  .historia-dos div figure img {
+    width: 22rem;
+    height: auto; }
+
+@media (min-width: 768px) {
+  .historia-uno figure img {
+    width: 32rem;
+    height: auto; }
+  .historia-dos figure img {
+    width: 32rem;
+    height: auto; } }
+
+@media (min-width: 1024px) {
+  body {
+    margin-top: 7%; }
+    body .historia-uno h2 {
+      font-size: 41px; }
+    body .historia-uno div {
+      margin-top: 2.5rem;
+      align-items: center;
+      justify-items: start;
+      grid-template-areas: "historia-texto historia-imagen";
+      grid-template-columns: 40% 60%; }
+      body .historia-uno div p {
+        grid-area: historia-texto;
+        font-size: 30px; }
+      body .historia-uno div figure {
+        grid-area: historia-imagen; }
+        body .historia-uno div figure img {
+          width: 42rem;
+          height: auto; }
+    body .historia-dos h2 {
+      font-size: 30px; }
+    body .historia-dos div {
+      margin-top: 7px;
+      grid-template-areas: "historia-texto-dos historia-imagen-dos ";
+      align-items: center;
+      justify-items: center; }
+      body .historia-dos div p {
+        font-size: 20px;
+        grid-area: historia-texto-dos; }
+      body .historia-dos div figure {
+        grid-area: historia-imagen-dos;
+        margin-right: 10px; }
+        body .historia-dos div figure img {
+          width: 32rem;
+          height: auto; } }
+
+@media (min-width: 1680px) {
+  body {
+    margin-top: 0%; }
+    body .historia-uno div p {
+      font-size: 50px; }
+    body .historia-uno div figure img {
+      width: 47rem;
+      height: auto; }
+    body .historia-dos div p {
+      font-size: 25px; } }
